@@ -17323,7 +17323,7 @@ section.section {
 .promo-primary__description span {
     color: #efc940;
     font-size: 80px;
-    line-height: 80px;
+    line-height: 100px;
     font-family: Storytella, sans-serif;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -19454,7 +19454,6 @@ a:hover {
     color: #343877;
     padding: 50px;
     margin: 0;
-    background-color: red;
 }
 
 .aside-menu__item {

@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { promo_1 } from '../assets/img'
+
 
 export const HomePage = () => {
     return (
@@ -10,8 +12,9 @@ export const HomePage = () => {
                     <div className="promo-slider">
                         <div className="promo-slider__item promo-slider__item--style-1">
                             <picture>
-                                <source srcSet="img/promo_1.jpg" media="(min-width: 835px)" />
-                                <source srcSet="img/834promo_1.jpg" media="(min-width: 376px)" /><img className="img--bg" src="img/375promo_1.jpg" alt="img" />
+                                <source srcSet={promo_1} media="(min-width: 835px)" />
+                                <source srcSet={promo_1} media="(min-width: 376px)" />
+                                <img className="img--bg" src={promo_1} alt="img" />
                             </picture>
                             <div className="container">
                                 <div className="row">
@@ -19,7 +22,7 @@ export const HomePage = () => {
                                         <div className="align-container">
                                             <div className="align-container__item">
                                                 <div className="promo-slider__wrapper-1">
-                                                    <h2 className="promo-slider__title"><span>We help all people in need</span> <span>around the world.</span></h2>
+                                                    <h2 className="promo-slider__title"><span>We help all people in need!!!</span> <span>around the world.</span></h2>
                                                 </div>
                                                 <div className="promo-slider__wrapper-2">
                                                     <p className="promo-slider__subtitle">Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfish</p>

@@ -2,9 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { promo_1 } from '../assets/img'
 
+
 export const HomePage = () => {
     return (
         <div className="page-wrapper">
+
             <main className="main">
                 <section className="promo">
                     <div className="promo-slider">
@@ -237,6 +239,108 @@ export const HomePage = () => {
                             </div>
                         </div>
                     </div>
+                    {/* <div className="causes-holder offset-margin">
+                        <div className="causes-holder__wrapper">
+                            <div className="causes-slider offset-margin">
+                                <div className="causes-slider__item">
+                                    <div className="causes-item causes-item--primary">
+                                        <div className="causes-item__body">
+                                            <div className="causes-item__top">
+                                                <h6 className="causes-item__title"> <Link to="cause-details.html">Water Delivery in Africa</Link></h6>
+                                                <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail</p>
+                                            </div>
+                                            <div className="causes-item__img">
+                                                <div className="causes-item__badge" style="background-color: #49C2DF">Water Delivery</div><img className="img--bg" src="img/causes_1.jpg" alt="img" />
+                                            </div>
+                                            <div className="causes-item__lower">
+                                                <div className="progress-bar">
+                                                    <div className="progress-bar__inner" style="width: 78%;">
+                                                        <div className="progress-bar__value">78%</div>
+                                                    </div>
+                                                </div>
+                                                <div className="causes-item__details-holder">
+                                                    <div className="causes-item__details-item"><span>Goal: </span><span>25 000$</span></div>
+                                                    <div className="causes-item__details-item text-right"><span>Pledged: </span><span>20 350$</span></div>
+                                                </div>
+                                            </div>
+                                        </div><Link className="button causes-item__button button--primary" to="#">+ Donate</Link>
+                                    </div>
+                                </div>
+                                <div className="causes-slider__item">
+                                    <div className="causes-item causes-item--primary">
+                                        <div className="causes-item__body">
+                                            <div className="causes-item__top">
+                                                <h6 className="causes-item__title"> <Link to="cause-details.html">Health in other Countries</Link></h6>
+                                                <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail</p>
+                                            </div>
+                                            <div className="causes-item__img">
+                                                <div className="causes-item__badge">Medicine</div><img className="img--bg" src="img/causes_2.jpg" alt="img" />
+                                            </div>
+                                            <div className="causes-item__lower">
+                                                <div className="progress-bar">
+                                                    <div className="progress-bar__inner" style="width: 23%;">
+                                                        <div className="progress-bar__value">23%</div>
+                                                    </div>
+                                                </div>
+                                                <div className="causes-item__details-holder">
+                                                    <div className="causes-item__details-item"><span>Goal: </span><span>14 000$</span></div>
+                                                    <div className="causes-item__details-item text-right"><span>Pledged: </span><span>6 098$</span></div>
+                                                </div>
+                                            </div>
+                                        </div><Link className="button causes-item__button button--primary" to="#">+ Donate</Link>
+                                    </div>
+                                </div>
+                                <div className="causes-slider__item">
+                                    <div className="causes-item causes-item--primary">
+                                        <div className="causes-item__body">
+                                            <div className="causes-item__top">
+                                                <h6 className="causes-item__title"> <Link to="cause-details.html">We Build and Create</Link></h6>
+                                                <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail</p>
+                                            </div>
+                                            <div className="causes-item__img">
+                                                <div className="causes-item__badge" style="background-color: #2EC774">Education</div><img className="img--bg" src="img/causes_3.jpg" alt="img" />
+                                            </div>
+                                            <div className="causes-item__lower">
+                                                <div className="progress-bar">
+                                                    <div className="progress-bar__inner" style="width: 51%;">
+                                                        <div className="progress-bar__value">51%</div>
+                                                    </div>
+                                                </div>
+                                                <div className="causes-item__details-holder">
+                                                    <div className="causes-item__details-item"><span>Goal: </span><span>150 000$</span></div>
+                                                    <div className="causes-item__details-item text-right"><span>Pledged: </span><span>76 500$</span></div>
+                                                </div>
+                                            </div>
+                                        </div><Link className="button causes-item__button button--primary" to="#">+ Donate</Link>
+                                    </div>
+                                </div>
+                                <div className="causes-slider__item">
+                                    <div className="causes-item causes-item--primary">
+                                        <div className="causes-item__body">
+                                            <div className="causes-item__top">
+                                                <h6 className="causes-item__title"> <Link to="cause-details.html">Healthy Food</Link></h6>
+                                                <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail</p>
+                                            </div>
+                                            <div className="causes-item__img">
+                                                <div className="causes-item__badge" style="background-color: #F8AC3A">Food</div><img className="img--bg" src="img/causes_4.jpg" alt="img" />
+                                            </div>
+                                            <div className="causes-item__lower">
+                                                <div className="progress-bar">
+                                                    <div className="progress-bar__inner" style="width: 50%;">
+                                                        <div className="progress-bar__value">50%</div>
+                                                    </div>
+                                                </div>
+                                                <div className="causes-item__details-holder">
+                                                    <div className="causes-item__details-item"><span>Goal: </span><span>50 000$</span></div>
+                                                    <div className="causes-item__details-item text-right"><span>Pledged: </span><span>25 000$</span></div>
+                                                </div>
+                                            </div>
+                                        </div><Link className="button causes-item__button button--primary" to="#">+ Donate</Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> */}
                 </section>
 
                 <section className="section projects no-padding-top no-padding-bottom">
@@ -253,29 +357,77 @@ export const HomePage = () => {
                     <div className="row no-gutters projects-masonry">
                         <div className="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-1 projects-masonry__item--vertical">
                             <div className="projects-masonry__img"><img className="img--bg" src="img/projects_1.jpg" alt="img" /></div>
-
+                            {/* <div className="projects-masonry__text" style="background-color: #2EC774;">
+                                <div className="projects-masonry__inner"><span className="projects-masonry__badge" style="background: #49C2DF;">Water Delivery</span>
+                                    <h3 className="projects-masonry__title"> <Link to="cause-details.html">More than One Life Changed</Link></h3>
+                                    <p>Rockweed gunnel; candlefish mail-cheeked fish, yellowtail snapper cuskfish elasmobranch seamoth triggerfish gar </p>
+                                    <div className="projects-masonry__details-holder">
+                                        <div className="projects-masonry__details-item"><span>Goal: </span><span>25 000$</span></div>
+                                        <div className="projects-masonry__details-item"><span>Date: </span><span>23 Jan'19</span></div>
+                                    </div>
+                                </div>
+                            </div> */}
                         </div>
                         <div className="col-lg-6 col-xl-8 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--horizontal">
                             <div className="projects-masonry__img"><img className="img--bg" src="img/projects_2.jpg" alt="img" /></div>
-
+                            {/* <div className="projects-masonry__text" style="background-color: #9BC35E;">
+                                <div className="projects-masonry__inner"><span className="projects-masonry__badge" style="background: #F36F8F;">Medicine</span>
+                                    <h3 className="projects-masonry__title"> <Link to="cause-details.html">Helpo for Help</Link></h3>
+                                    <p>Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp</p>
+                                    <div className="projects-masonry__details-holder">
+                                        <div className="projects-masonry__details-item"><span>Goal: </span><span>25 000$</span></div>
+                                        <div className="projects-masonry__details-item"><span>Date: </span><span>23 Jan'19</span></div>
+                                    </div>
+                                </div>
+                            </div> */}
                         </div>
                         <div className="col-lg-6 col-xl-8 projects-masonry__item projects-masonry__item--height-1 projects-masonry__item--primary">
                             <div className="projects-masonry__img"><img className="img--bg" src="img/projects_3.jpg" alt="img" />
-
+                                {/* <div className="projects-masonry__inner"><span className="projects-masonry__badge" style="background: #F8AC3A;">Food</span>
+                                    <h3 className="projects-masonry__title"> <Link to="cause-details.html">Help for Children of the East</Link></h3>
+                                    <p>Murray cod clownfish American sole rockfish dojo loach gulper, trout-perch footballfish, pelican eel. Spinefoot coelacanth eagle ray </p>
+                                    <div className="projects-masonry__details-holder">
+                                        <div className="projects-masonry__details-item"><span>Goal: </span><span>25 000$</span></div>
+                                        <div className="projects-masonry__details-item"><span>Date: </span><span>23 Jan'19</span></div>
+                                    </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary">
                             <div className="projects-masonry__img"><img className="img--bg" src="img/projects_4.jpg" alt="img" />
-
+                                {/* <div className="projects-masonry__inner"><span className="projects-masonry__badge" style="background: #2EC774;">Education</span>
+                                    <h3 className="projects-masonry__title"> <Link to="cause-details.html">Help for Children of the East</Link></h3>
+                                    <p>Murray cod clownfish American sole rockfish dojo loach gulper, trout-perch footballfish, pelican eel. Spinefoot coelacanth eagle ray </p>
+                                    <div className="projects-masonry__details-holder">
+                                        <div className="projects-masonry__details-item"><span>Goal: </span><span>25 000$</span></div>
+                                        <div className="projects-masonry__details-item"><span>Date: </span><span>23 Jan'19</span></div>
+                                    </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className="col-lg-6 col-xl-8 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--horizontal">
                             <div className="projects-masonry__img"><img className="img--bg" src="img/projects_5.jpg" alt="img" /></div>
-
+                            {/* <div className="projects-masonry__text" style="background-color: #E78F51;">
+                                <div className="projects-masonry__inner"><span className="projects-masonry__badge" style="background: #2EC774;">Education</span>
+                                    <h3 className="projects-masonry__title"> <Link to="cause-details.html">Help for Children of the East</Link></h3>
+                                    <p>Murray cod clownfish American sole rockfish dojo loach gulper, trout-perch footballfish, pelican eel. Spinefoot coelacanth eagle ray </p>
+                                    <div className="projects-masonry__details-holder">
+                                        <div className="projects-masonry__details-item"><span>Goal: </span><span>25 000$</span></div>
+                                        <div className="projects-masonry__details-item"><span>Date: </span><span>23 Jan'19</span></div>
+                                    </div>
+                                </div>
+                            </div> */}
                         </div>
                         <div className="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary">
                             <div className="projects-masonry__img"><img className="img--bg" src="img/projects_6.jpg" alt="img" />
-
+                                {/* <div className="projects-masonry__inner"><span className="projects-masonry__badge" style="background: #F36F8F;">Medicine</span>
+                                    <h3 className="projects-masonry__title"> <Link to="cause-details.html">Helpo for Help</Link></h3>
+                                    <p>Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp</p>
+                                    <div className="projects-masonry__details-holder">
+                                        <div className="projects-masonry__details-item"><span>Goal: </span><span>25 000$</span></div>
+                                        <div className="projects-masonry__details-item"><span>Date: </span><span>23 Jan'19</span></div>
+                                    </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -412,6 +564,7 @@ export const HomePage = () => {
                         <div className="row offset-margin">
                             <div className="col-md-6 col-lg-5 col-xl-4">
                                 <div className="blog-item blog-item--style-1">
+                                    {/* <div className="blog-item__img"><img className="img--bg" src="img/blog_1.jpg" alt="img" /><span className="blog-item__badge" style="background-color: #49C2DF;">Water Delivery</span></div> */}
                                     <div className="blog-item__content">
                                         <h6 className="blog-item__title"><Link to="#">Save the Children's Role in Fight Against Malnutrition Hailed</Link></h6>
                                         <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail canthigaster</p>
@@ -424,7 +577,10 @@ export const HomePage = () => {
                             </div>
                             <div className="col-md-6 col-lg-7 col-xl-8">
                                 <div className="blog-item blog-item--style-2"><img className="img--bg" src="img/blog_2.png" alt="img" />
-
+                                    {/* <div className="blog-item__content"><span className="blog-item__badge" style="background-color: #2EC774;">Education</span>
+                                        <h6 className="blog-item__title"><Link to="#">Back to the future: Quality education through respect, commitment and accountability</Link></h6>
+                                        <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail canthigaster rostrata. Midshipman dartfish Modoc sucker, yellowtail</p>
+                                    </div> */}
                                     <div className="blog-item__details"><span className="blog-item__date">23 Jan' 19</span><span>
                                         <svg className="icon">
                                             <use xlinkHref="#comment"></use>
@@ -433,7 +589,10 @@ export const HomePage = () => {
                             </div>
                             <div className="col-md-6 col-lg-7 col-xl-8">
                                 <div className="blog-item blog-item--style-2"><img className="img--bg" src="img/blog_3.png" alt="img" />
-
+                                    {/* <div className="blog-item__content"><span className="blog-item__badge" style="background-color: #F8AC3A;">Food</span>
+                                        <h6 className="blog-item__title"><Link to="#">Condolences to Families Effected By Flash Floods in Setswetla, Alexandra Township, Johannesburg</Link></h6>
+                                        <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail canthigaster rostrata. Midshipman dartfish Modoc sucker, yellowtail</p>
+                                    </div> */}
                                     <div className="blog-item__details"><span className="blog-item__date">23 Jan' 19</span><span>
                                         <svg className="icon">
                                             <use xlinkHref="#comment"></use>
@@ -442,6 +601,7 @@ export const HomePage = () => {
                             </div>
                             <div className="col-md-6 col-lg-5 col-xl-4">
                                 <div className="blog-item blog-item--style-1">
+                                    {/* <div className="blog-item__img"><img className="img--bg" src="img/blog_4.png" alt="img" /><span className="blog-item__badge" style="background-color: #F36F8F;">Medicine</span></div> */}
                                     <div className="blog-item__content">
                                         <h6 className="blog-item__title"><Link to="#">Save the Children's Role in Fight Against Malnutrition Hailed</Link></h6>
                                         <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail canthigaster</p>
@@ -510,6 +670,22 @@ export const HomePage = () => {
                     </div>
                     <div className="instagram-slider"><Link className="instagram-slider__item" to="#"><img className="img--bg" src="img/ig_1.jpg" alt="img" /><span className="instagram-slider__icon"><i className="fa fa-instagram" aria-hidden="true"></i></span><span className="instagram-slider__icon-hover"><i className="fa fa-instagram" aria-hidden="true"></i></span></Link><Link className="instagram-slider__item" to="#"><img className="img--bg" src="img/ig_2.jpg" alt="img" /><span className="instagram-slider__icon"><i className="fa fa-instagram" aria-hidden="true"></i></span><span className="instagram-slider__icon-hover"><i className="fa fa-instagram" aria-hidden="true"></i></span></Link><Link className="instagram-slider__item" to="#"><img className="img--bg" src="img/ig_3.jpg" alt="img" /><span className="instagram-slider__icon"><i className="fa fa-instagram" aria-hidden="true"></i></span><span className="instagram-slider__icon-hover"><i className="fa fa-instagram" aria-hidden="true"></i></span></Link><Link className="instagram-slider__item" to="#"><img className="img--bg" src="img/ig_4.jpg" alt="img" /><span className="instagram-slider__icon"><i className="fa fa-instagram" aria-hidden="true"></i></span><span className="instagram-slider__icon-hover"><i className="fa fa-instagram" aria-hidden="true"></i></span></Link><Link className="instagram-slider__item" to="#"><img className="img--bg" src="img/ig_5.jpg" alt="img" /><span className="instagram-slider__icon"><i className="fa fa-instagram" aria-hidden="true"></i></span><span className="instagram-slider__icon-hover"><i className="fa fa-instagram" aria-hidden="true"></i></span></Link><Link className="instagram-slider__item" to="#"><img className="img--bg" src="img/ig_6.jpg" alt="img" /><span className="instagram-slider__icon"><i className="fa fa-instagram" aria-hidden="true"></i></span><span className="instagram-slider__icon-hover"><i className="fa fa-instagram" aria-hidden="true"></i></span></Link><Link className="instagram-slider__item" to="#"><img className="img--bg" src="img/ig_4.jpg" alt="img" /><span className="instagram-slider__icon"><i className="fa fa-instagram" aria-hidden="true"></i></span><span className="instagram-slider__icon-hover"><i className="fa fa-instagram" aria-hidden="true"></i></span></Link></div>
                 </section>
+
+                {/* <section className="subscribe">
+                    <div className="container">
+                        <div className="row align-items-end">
+                            <div className="col-lg-4">
+                                <h2 className="subscribe__title">Subscribe.</h2>
+                            </div>
+                            <div className="col-lg-8">
+                                <form className="subscribe-form" action="javascript:void(0);">
+                                    <input className="subscribe-form__input" type="email" name="email" placeholder="Enter your E-mail" required />
+                                    <input className="subscribe-form__submit" type="submit" value="Submit" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section> */}
             </main>
 
         </div>

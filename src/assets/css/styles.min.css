@@ -55,13 +55,16 @@ article,
 aside,
 figcaption,
 figure,
-footer,
 header,
 hgroup,
 main,
 nav,
 section {
     display: block
+}
+
+footer {
+    width: 100%;
 }
 
 body {
@@ -589,7 +592,7 @@ pre code {
     margin-left: auto
 }
 
-@media (min-width:576px) {
+/* @media (min-width:576px) {
     .container {
         max-width: 540px
     }
@@ -611,7 +614,7 @@ pre code {
     .container {
         max-width: 1140px
     }
-}
+} */
 
 .container-fluid {
     width: 100%;

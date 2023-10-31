@@ -3,7 +3,8 @@ import { Error404Page, HomePage, ContactPage, AboutPage } from '../pages';
 import { ShopPage } from '../pages/ShopPage';
 
 export const AppRouter = () => {
-    return <>
+    return (<>
+
         <Routes>
             <Route path='/' element={<HomePage />} />
             <Route path='/sobre-nosotros' element={<AboutPage />} />
@@ -20,6 +21,6 @@ export const AppRouter = () => {
 
             <Route path='/*' element={<Error404Page />} />
         </Routes>
-    </>
+    </>)
 
 }

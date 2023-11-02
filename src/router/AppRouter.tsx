@@ -8,8 +8,8 @@ export const AppRouter = () => {
     return <>
         <Routes>
             <Route path='/' element={<HomePage />} />
-            <Route path='/about' element={<AboutPage />} />
-            <Route path='/contact' element={<ContactPage />} />
+            <Route path='/sobre-nosotros' element={<AboutPage />} />
+            <Route path='/contacto' element={<ContactPage />} />
 
 
             <Route path='/*' element={<Error404Page />} />

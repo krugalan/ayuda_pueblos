@@ -15,7 +15,7 @@ export const AboutSection = () => {
                             <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail, Canthigaster rostrata. Midshipman dartfish Modoc sucker, yellowtail kingfish basslet. Buri chimaera triplespine northern sea robin zingel lancetfish galjoen fish, catla wolffish, mosshead warbonnet</p><a className="button button--primary" href="about.html">More About</a>
                         </div>
                         <div className="col-lg-6 col-xl-5 offset-xl-1">
-                            <div className="info-box"><img className="img--layout" src="img/about_layout.png" alt="img" /><img className="img--bg" src="img/about-us.jpg" alt="img" />
+                            <div className="info-box"><img className="img--layout" src="../src/assets/img/about_layout.png" alt="img" /><img className="img--bg" src="../src/assets/img/about-us.jpg" alt="img" />
                                 <h4 className="info-box__title">We are Awesome Volounteer Team</h4>
                                 <p>Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfish</p><a className="info-box__link" href="volunteer.html">Become a volounteer</a>
                             </div>

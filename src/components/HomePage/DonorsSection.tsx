@@ -17,16 +17,16 @@ export const DonorsSection = () => {
                             <div className="slider-holder">
                                 <div className="donors-slider donors-slider--style-1">
                                     <div className="donors-slider__item">
-                                        <div className="donors-slider__img"><img src="img/donor_1.png" alt="donor" /></div>
+                                        <div className="donors-slider__img"><img src="../src/assets/img/donor_1.png" alt="donor" /></div>
                                     </div>
                                     <div className="donors-slider__item">
-                                        <div className="donors-slider__img"><img src="img/donor_2.png" alt="donor" /></div>
+                                        <div className="donors-slider__img"><img src="../src/assets/img/donor_2.png" alt="donor" /></div>
                                     </div>
                                     <div className="donors-slider__item">
-                                        <div className="donors-slider__img"><img src="img/donor_3.png" alt="donor" /></div>
+                                        <div className="donors-slider__img"><img src="../src/assets/img/donor_3.png" alt="donor" /></div>
                                     </div>
                                     <div className="donors-slider__item">
-                                        <div className="donors-slider__img"><img src="img/donor_4.png" alt="donor" /></div>
+                                        <div className="donors-slider__img"><img src="../src/assets/img/donor_4.png" alt="donor" /></div>
                                     </div>
                                 </div>
                             </div>

@@ -15,7 +15,7 @@ export const CauseComponent = () => {
           <div className="row">
             <div className="col-6 col-lg-3">
               <div className="icon-item">
-                <div className="icon-item__img"><img className="img--layout" src="img/icon_1-1.png" alt="img" />
+                <div className="icon-item__img"><img className="img--layout" src="../src/assets/img/icon_1-1.png" alt="img" />
                   <svg className="icon icon-item__icon icon--red">
                     <use xlinkHref="#donation"></use>
                   </svg>
@@ -27,7 +27,7 @@ export const CauseComponent = () => {
             </div>
             <div className="col-6 col-lg-3">
               <div className="icon-item">
-                <div className="icon-item__img"><img className="img--layout" src="img/icon_2-2.png" alt="img" />
+                <div className="icon-item__img"><img className="img--layout" src="../src/assets/img/icon_2-2.png" alt="img" />
                   <svg className="icon icon-item__icon icon--orange">
                     <use xlinkHref="#church"></use>
                   </svg>
@@ -39,7 +39,7 @@ export const CauseComponent = () => {
             </div>
             <div className="col-6 col-lg-3">
               <div className="icon-item">
-                <div className="icon-item__img"><img className="img--layout" src="img/icon_3-3.png" alt="img" />
+                <div className="icon-item__img"><img className="img--layout" src="../src/assets/img/icon_3-3.png" alt="img" />
                   <svg className="icon icon-item__icon icon--green">
                     <use xlinkHref="#blood"></use>
                   </svg>
@@ -51,7 +51,7 @@ export const CauseComponent = () => {
             </div>
             <div className="col-6 col-lg-3">
               <div className="icon-item">
-                <div className="icon-item__img"><img className="img--layout" src="img/icon_4-4.png" alt="img" />
+                <div className="icon-item__img"><img className="img--layout" src="../src/assets/img/icon_4-4.png" alt="img" />
                   <svg className="icon icon-item__icon icon--blue">
                     <use xlinkHref="#charity"></use>
                   </svg>

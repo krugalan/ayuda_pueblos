@@ -3,7 +3,7 @@ import React from 'react'
 export const HelpSection = () => {
     return (
         <div>
-            <section className="section causes"><img className="causes__bg" src="img/causes_img.png" alt="img" />
+            <section className="section causes"><img className="causes__bg" src="../src/assets/img/causes_img.png" alt="img" />
                 <div className="container">
                     <div className="row align-items-end">
                         <div className="col-xl-5">
@@ -58,7 +58,7 @@ export const HelpSection = () => {
                                             <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail</p>
                                         </div>
                                         <div className="causes-item__img">
-                                            <div className="causes-item__badge" >Water Delivery</div><img className="img--bg" src="img/causes_1.jpg" alt="img" />
+                                            <div className="causes-item__badge" >Water Delivery</div><img className="img--bg" src="../src/assets/img/causes_1.jpg" alt="img" />
                                         </div>
                                         <div className="causes-item__lower">
                                             <div className="progress-bar">
@@ -82,7 +82,7 @@ export const HelpSection = () => {
                                             <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail</p>
                                         </div>
                                         <div className="causes-item__img">
-                                            <div className="causes-item__badge" >Medicine</div><img className="img--bg" src="img/causes_2.jpg" alt="img" />
+                                            <div className="causes-item__badge" >Medicine</div><img className="img--bg" src="../src/assets/img/causes_2.jpg" alt="img" />
                                         </div>
                                         <div className="causes-item__lower">
                                             <div className="progress-bar">
@@ -106,7 +106,7 @@ export const HelpSection = () => {
                                             <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail</p>
                                         </div>
                                         <div className="causes-item__img">
-                                            <div className="causes-item__badge" >Education</div><img className="img--bg" src="img/causes_3.jpg" alt="img" />
+                                            <div className="causes-item__badge" >Education</div><img className="img--bg" src="../src/assets/img/causes_3.jpg" alt="img" />
                                         </div>
                                         <div className="causes-item__lower">
                                             <div className="progress-bar">
@@ -130,7 +130,7 @@ export const HelpSection = () => {
                                             <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail</p>
                                         </div>
                                         <div className="causes-item__img">
-                                            <div className="causes-item__badge" >Food</div><img className="img--bg" src="img/causes_4.jpg" alt="img" />
+                                            <div className="causes-item__badge" >Food</div><img className="img--bg" src="../src/assets/img/causes_4.jpg" alt="img" />
                                         </div>
                                         <div className="causes-item__lower">
                                             <div className="progress-bar">

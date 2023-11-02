@@ -3,7 +3,7 @@ import React from 'react'
 export const TestimonialsSection = () => {
     return (
         <div>
-            <section className="section events"><img className="events__bg" src="img/events_bg.png" alt="img" />
+            <section className="section events"><img className="events__bg" src="../src/assets/img/events_bg.png" alt="img" />
                 <div className="container">
                     <div className="row margin-bottom">
                         <div className="col-12">
@@ -16,7 +16,7 @@ export const TestimonialsSection = () => {
                     <div className="row">
                         <div className="col-md-6 col-lg-4">
                             <div className="event-item">
-                                <div className="event-item__img"><img className="img--bg" src="img/event_1.jpg" alt="img" /></div>
+                                <div className="event-item__img"><img className="img--bg" src="../src/assets/img/event_1.jpg" alt="img" /></div>
                                 <div className="event-item__content">
                                     <h6 className="event-item__title"><a href="#">Help for Language. Voluanteer</a></h6>
                                     <p><b>Dark Spurt,</b> San Francisco, CA 94528, USA</p>
@@ -27,7 +27,7 @@ export const TestimonialsSection = () => {
                         </div>
                         <div className="col-md-6 col-lg-4">
                             <div className="event-item">
-                                <div className="event-item__img"><img className="img--bg" src="img/event_2.jpg" alt="img" /></div>
+                                <div className="event-item__img"><img className="img--bg" src="../src/assets/img/event_2.jpg" alt="img" /></div>
                                 <div className="event-item__content">
                                     <h6 className="event-item__title"><a href="#">The Culture of Africa. Rebirth</a></h6>
                                     <p><b>Dark Spurt,</b> San Francisco, CA 94528, USA</p>
@@ -38,7 +38,7 @@ export const TestimonialsSection = () => {
                         </div>
                         <div className="col-md-6 col-lg-4">
                             <div className="event-item">
-                                <div className="event-item__img"><img className="img--bg" src="img/event_3.jpg" alt="img" /></div>
+                                <div className="event-item__img"><img className="img--bg" src="../src/assets/img/event_3.jpg" alt="img" /></div>
                                 <div className="event-item__content">
                                     <h6 className="event-item__title"><a href="#">Help for Language. Voluanteer</a></h6>
                                     <p><b>Dark Spurt,</b> San Francisco, CA 94528, USA</p>
@@ -53,7 +53,7 @@ export const TestimonialsSection = () => {
                     </div>
                 </div>
             </section>
-            <section className="section text-section"><img className="text-section__bg" src="img/text-section.png" alt="img" />
+            <section className="section text-section"><img className="text-section__bg" src="../src/assets/img/text-section.png" alt="img" />
                 <div className="container">
                     <div className="row">
                         <div className="col-12 text-center">
@@ -71,7 +71,7 @@ export const TestimonialsSection = () => {
             <section className="section testimonials--style-2">
                 <div className="testimonials--style-2__bg jarallax">
                     <picture>
-                        <source srcSet="img/testimonials_2.jpg" media="(min-width: 992px)" /><img className="jarallax-img" src="img/testimonials_2.jpg" alt="img" />
+                        <source srcSet="../src/assets/img/testimonials_2.jpg" media="(min-width: 992px)" /><img className="jarallax-img" src="../src/assets/img/testimonials_2.jpg" alt="img" />
                     </picture>
                 </div>
                 <div className="container">

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const NavBar = () => {
+export const _NavBar = () => {
     return (
         <div>
             <div className="aside-dropdown">

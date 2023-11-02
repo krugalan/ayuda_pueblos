@@ -3,6 +3,15 @@ import React from 'react'
 export const Footer = () => {
     return (
         <div>
+            <section className="bottom-background">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="bottom-background__img"><img src="../src/assets/img/bottom-bg.png" alt="img" /></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <footer className="footer">
                 <div className="container">
                     <div className="row">

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { PageFiller } from '../components/PageFiller'
 import { MainPicture } from '../components/MainPicture'
 import { ContactSection } from '../components/ContactPage/ContactSection'

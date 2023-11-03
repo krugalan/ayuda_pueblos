@@ -1,20 +1,17 @@
-import React from 'react'
+
 import { MainPicture } from '../components/MainPicture'
 import { PageFiller } from '../components/PageFiller'
 import { HandWrittenText } from '../components/HandWrittenText'
 
 export const ShopPage = () => {
 
-    const handleSortByLatest = () => {
-
-    }
 
     return (
         <div>
             <div className="page-wrapper">
                 <main className="main">
                     <section className="promo-primary promo-primary--shop">
-                        <MainPicture imgURL='../src/assets/img/shop.jpg' />
+                        <MainPicture imgURL='../src/assets/img/shop.jpg' title='Shop' />
                         <HandWrittenText text='Shop' />
                         <div className="container">
                             <div className="row">

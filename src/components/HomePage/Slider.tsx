@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { contactEmail, phoneNumber } from '../../constants'
 
 export const Slider = () => {

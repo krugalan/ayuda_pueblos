@@ -7,8 +7,8 @@ export const AboutSection = () => {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6">
-                            <div className="heading heading--primary"><span className="heading__pre-title">About Us</span>
-                                <h2 className="heading__title"><span>Help is Our</span> <span>Main Goal</span></h2>
+                            <div className="heading heading--primary"><span className="heading__pre-title">Sobre Nosotros</span>
+                                <h2 className="heading__title"><span>Ayudar es </span> <span>Nuestra Prioridad</span></h2>
                             </div>
                             <p><strong>Thresher shark rudd African lungfish silverside, Red salmon rockfish grunion, garpike zebra danio king-of-the-salmon banjo catfish."</strong></p>
                             <p>Sea chub demoiselle whalefish zebra lionfish mud cat pelican eel. Minnow snoek icefish velvet-belly shark, California halibut round stingray northern sea robin. Southern grayling trout-perch</p>

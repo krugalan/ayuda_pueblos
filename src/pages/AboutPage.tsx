@@ -1,5 +1,3 @@
-import React from 'react'
-import { VolunteersSection } from '../components/HomePage/VolunteersSection'
 import { PageFiller } from '../components/PageFiller'
 import { MainPicture } from '../components/MainPicture'
 
@@ -7,7 +5,7 @@ import { MainPicture } from '../components/MainPicture'
 export const AboutPage = () => {
     return (<>
         <section className="promo-primary">
-            <MainPicture imgURL='../src/assets/img/about.jpg' />
+            <MainPicture imgURL='../src/assets/img/about.jpg' title="Sobre Nosotros" />
             <div className="promo-primary__description">
                 <span>Donation</span>
             </div>

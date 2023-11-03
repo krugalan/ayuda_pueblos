@@ -9,19 +9,7 @@ export const DonorsPage = () => {
 
                 <main className="main">
                     <section className="promo-primary">
-                        <MainPicture imgURL="../src/assets/img/donors.jpg" />
-                        <div className="promo-primary__description mb-5 pb-5"> <span>Mercy</span></div>
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-auto">
-                                    <div className="align-container">
-                                        <div className="align-container__item"><span className="promo-primary__pre-title">Ayuda a Pueblos</span>
-                                            <h1 className="promo-primary__title"><span>Donantes</span> <span>y Colaboradores</span></h1>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <MainPicture imgURL="../src/assets/img/donors.jpg" title='Donantes y Colaboradores' />
                     </section>
                     <section className="section donors-inner"><img className="donors-inner__bg" src="../src/assets/img/donors_inner.png" alt="img" />
                         <div className="container">

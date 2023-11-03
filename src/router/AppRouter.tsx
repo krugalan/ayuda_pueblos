@@ -26,6 +26,7 @@ export const AppRouter = () => {
             <Route path='/blog' element={<BlogPage />} />
             <Route path='/galeria' element={<GalleryPage />} />
             <Route path='/preguntas-frecuentes' element={<FAQPage />} />
+            <Route path='/nuestras-causas' element={<FAQPage />} />
 
 
 

@@ -5,12 +5,9 @@ export const useModal = () => {
 
     const openModal = () => {
         setActiveModal(true);
-        console.log(activeModal);
     }
     const closeModal = () => {
         setActiveModal(false);
-        console.log(activeModal);
-
     }
 
     return {

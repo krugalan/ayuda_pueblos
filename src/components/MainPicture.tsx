@@ -3,7 +3,7 @@
 type MainPictureType = {
     imgURL: string;
     title: string;
-    title2: string;
+    title2?: string;
 }
 
 export const MainPicture = ({ imgURL, title, title2 }: MainPictureType) => {

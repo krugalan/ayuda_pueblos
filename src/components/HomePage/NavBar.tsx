@@ -13,13 +13,16 @@ export const NavBar = () => {
     const { openModal, activeModal, closeModal } = useModal();
     return (
         <div>
-            <MobileNavBarHome />
             <header className="header header--front">
                 <div className="container-fluid">
                     <div className="row no-gutters justify-content-between">
                         <div className="col-auto d-flex align-items-center">
+
                             <div className="dropdown-trigger d-none d-sm-block">
-                                <div className="dropdown-trigger__item"></div>
+                                <div className="dropdown-trigger__item">
+                                    <MobileNavBarHome />
+
+                                </div>
                             </div>
                             <div className="header-logo">
                                 <Link className="header-logo__link" to="/">

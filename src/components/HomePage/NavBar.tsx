@@ -3,13 +3,14 @@ import { logo } from '../../assets/img';
 import { MobileNavBarHome } from './MobileNavBarHome'
 import { Link } from 'react-router-dom';
 import { useModal } from '../../hooks/useModal';
+import { DonationModal } from '../DonationModal';
 
 
 export const NavBar = () => {
 
     /*TODO: Crear un modal para cuando se presione el boton de Donar, en el que 
     aparezca el CBU, y la info correspondiente para hacer donaciones.*/
-    const { openModal } = useModal();
+    const { openModal, activeModal, closeModal } = useModal();
     return (
         <div>
             <MobileNavBarHome />
@@ -91,6 +92,7 @@ export const NavBar = () => {
                     </div>
                 </div>
             </header>
+            <DonationModal showModal={activeModal} onHideModal={closeModal} />
         </div>
     )
 }

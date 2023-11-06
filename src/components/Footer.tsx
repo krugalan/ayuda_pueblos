@@ -2,12 +2,17 @@
 import { Link } from 'react-router-dom'
 import { contactEmail, phoneNumber } from '../constants'
 import { bottom_bg, logo } from '../assets/img';
+import { useModal } from '../hooks/useModal';
+import { DonationModal } from './DonationModal';
 
 const whatsappMessage = 'Hola Me gustaría recibir más información y de que formas se puede colaborar.';
 
 const baseUrl = 'https://api.whatsapp.com/send/?phone=';
 
 export const Footer = () => {
+
+    const { openModal, closeModal, activeModal } = useModal();
+
     const customLink = baseUrl + phoneNumber + "&text=" + whatsappMessage + '&type=phone_number&app_absent=0';
     return (
         <div>
@@ -57,7 +62,8 @@ export const Footer = () => {
                         </div>
                         <div className="col-sm-6 col-lg-3">
                             <h4 className="footer__title">Donar</h4>
-                            <p>Ayudanos a mejorar las vidas de los pueblos originarios!</p><a className="button footer__button button--filled" href="#">Donar</a>
+                            <p>Ayudanos a mejorar las vidas de los pueblos originarios!</p>
+                            <button className="button footer__button button--filled" onClick={openModal}>Donar</button>
                         </div>
                     </div>
                     <div className="row align-items-baseline">
@@ -69,6 +75,7 @@ export const Footer = () => {
                         </div> */}
                     </div>
                 </div>
+                <DonationModal showModal={activeModal} onHideModal={closeModal} />
             </footer>
         </div>
     )

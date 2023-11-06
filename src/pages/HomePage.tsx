@@ -9,14 +9,13 @@ import { TestimonialsSection } from '../components/HomePage/TestimonialsSection'
 import { BlogHelpSection } from '../components/HomePage/BlogHelpSection'
 import { DonorsSection } from '../components/HomePage/DonorsSection'
 import { SocialsSection } from '../components/HomePage/SocialsSection'
-import { DonationModal } from '../components/DonationModal'
 
 export const HomePage = () => {
+
     return (
         <div>
             <div className="page-wrapper">
                 <NavBar />
-                <DonationModal />
                 <HeroSection />
                 <AboutSection />
                 <CauseComponent />

@@ -1,18 +1,14 @@
 
 import { contactEmail, phoneNumber } from '../../constants'
+import { RRSSList } from '../RRSSList'
+import { SliderItem } from './SliderItem'
+
+import { blog_1 } from '../../assets/img'
 
 export const Slider = () => {
     return (
         <>
-            <section className="promo">
-
-                <ul className="promo-socials">
-                    <li className="promo-socials__item"><a className="promo-socials__link" href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li className="promo-socials__item"><a className="promo-socials__link" href="#"><i className="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                    <li className="promo-socials__item"><a className="promo-socials__link" href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li className="promo-socials__item"><a className="promo-socials__link" href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
-                </ul>
-            </section>
+            <RRSSList />
             <div id="carouselExampleCaptions" className="carousel slide">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -20,13 +16,7 @@ export const Slider = () => {
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img src="../src/assets/img/blog_1.jpg" className="d-block w-100" alt="..." />
-                        <div className="carousel-caption d-none d-md-block">
-                            <button className='btn btn-primary mb-3 p-3'>Leer más</button>
-                            <p>Fecha de Blog.</p>
-                        </div>
-                    </div>
+                    <SliderItem img={blog_1} date='15 Feb. 2023' />
                     <div className="carousel-item">
                         <img src="../src/assets/img/blog_2.png" className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">

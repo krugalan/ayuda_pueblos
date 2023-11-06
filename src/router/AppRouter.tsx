@@ -19,6 +19,7 @@ export const AppRouter = () => {
             <Route path='/sobre-nosotros' element={<AboutPage />} />
             <Route path='/contacto' element={<ContactPage />} />
             <Route path='/donantes-y-colaboradores' element={<DonorsPage />} />
+            <Route path='/nuestras-causas' element={<DonorsPage />} />
             <Route path='/shop-solidario' element={<ShopPage />} />
             <Route path='/voluntarios' element={<VolunteersPage />} />
             <Route path='/eventos' element={<EventsPage />} />

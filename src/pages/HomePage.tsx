@@ -1,5 +1,5 @@
 
-import { NavBarHome } from '../components/HomePage/NavBarHome'
+import { NavBar } from '../components/HomePage/NavBar'
 import { HeroSection } from '../components/HomePage/HeroSection'
 import { AboutSection } from '../components/HomePage/AboutSection'
 import { CauseComponent } from '../components/HomePage/CauseComponent'
@@ -9,12 +9,14 @@ import { TestimonialsSection } from '../components/HomePage/TestimonialsSection'
 import { BlogHelpSection } from '../components/HomePage/BlogHelpSection'
 import { DonorsSection } from '../components/HomePage/DonorsSection'
 import { SocialsSection } from '../components/HomePage/SocialsSection'
+import { DonationModal } from '../components/DonationModal'
 
 export const HomePage = () => {
     return (
         <div>
             <div className="page-wrapper">
-                <NavBarHome />
+                <NavBar />
+                <DonationModal />
                 <HeroSection />
                 <AboutSection />
                 <CauseComponent />

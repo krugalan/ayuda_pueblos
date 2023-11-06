@@ -1,9 +1,15 @@
 
+import { logo } from '../../assets/img';
 import { MobileNavBarHome } from './MobileNavBarHome'
 import { Link } from 'react-router-dom';
+import { useModal } from '../../hooks/useModal';
 
 
-export const NavBarHome = () => {
+export const NavBar = () => {
+
+    /*TODO: Crear un modal para cuando se presione el boton de Donar, en el que 
+    aparezca el CBU, y la info correspondiente para hacer donaciones.*/
+    const { openModal } = useModal();
     return (
         <div>
             <MobileNavBarHome />
@@ -16,8 +22,8 @@ export const NavBarHome = () => {
                             </div>
                             <div className="header-logo">
                                 <Link className="header-logo__link" to="/">
-                                    <img className="header-logo__img logo--light" src="../src/assets/img/logo.jpg" alt="logo" />
-                                    <img className="header-logo__img logo--dark" src="../src/assets/img/logo_dark.png" alt="logo" />
+                                    <img className="header-logo__img logo--light" src={logo} alt="logo" />
+                                    <img className="header-logo__img logo--dark" src={logo} alt="logo" />
                                 </Link>
                             </div>
                         </div>
@@ -44,7 +50,10 @@ export const NavBarHome = () => {
                                             <li><Link to="/preguntas-frecuentes"><span>Preguntas Frecuentes</span></Link></li>
                                         </ul>
                                     </li>
-                                    <li className="main-menu__item main-menu__item--has-child"><a className="main-menu__link" href="javascript:void(0);"><span>Nuestras Causas</span></a>
+                                    <li className="main-menu__item main-menu__item--has-child">
+                                        <Link className="main-menu__link" to="/nuestras-causas">
+                                            <span>Nuestras Causas</span>
+                                        </Link>
                                         {/* <ul className="main-menu__sub-list">
                                             <li><a href="causes.html"><span>Causes 1</span></a></li>
                                             <li><a href="causes_2.html"> <span>Causes 2</span></a></li>
@@ -71,7 +80,13 @@ export const NavBarHome = () => {
                         <div className="col-auto d-flex align-items-center">
                             <div className="dropdown-trigger d-block d-sm-none">
                                 <div className="dropdown-trigger__item"></div>
-                            </div><a className="button button--squared" href="#"><span>Donar</span></a>
+                            </div>
+                            <button
+                                className="button button--squared border border-0"
+                                onClick={openModal}
+                            >
+                                <span>Donar</span>
+                            </button>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 import { AppRouter } from './router/AppRouter'
 import { BrowserRouter } from 'react-router-dom';
-import { NavBarHome } from './components/HomePage/NavBarHome';
+import { NavBar } from './components/HomePage/NavBar';
 import { Footer } from './components/Footer';
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
     <BrowserRouter>
       <div>
         <div className="page-wrapper">
-          <NavBarHome />
+          <NavBar />
           <AppRouter />
           <Footer />
         </div>

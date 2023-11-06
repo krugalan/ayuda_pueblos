@@ -1,6 +1,7 @@
 
 import { PageFiller } from '../components/PageFiller'
 import { MainPicture } from '../components/MainPicture'
+import { donors } from '../assets/img'
 
 export const DonorsPage = () => {
     return (
@@ -9,7 +10,7 @@ export const DonorsPage = () => {
 
                 <main className="main">
                     <section className="promo-primary">
-                        <MainPicture imgURL="../src/assets/img/donors.jpg" title='Donantes y Colaboradores' />
+                        <MainPicture imgURL={donors} title='Donantes y' title2='Colaboradores' />
                     </section>
                     <section className="section donors-inner"><img className="donors-inner__bg" src="../src/assets/img/donors_inner.png" alt="img" />
                         <div className="container">

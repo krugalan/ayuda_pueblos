@@ -1,6 +1,7 @@
 
 import { Link } from 'react-router-dom'
 import { contactEmail, phoneNumber } from '../constants'
+import { bottom_bg, logo } from '../assets/img';
 
 const whatsappMessage = 'Hola Me gustaría recibir más información y de que formas se puede colaborar.';
 
@@ -14,7 +15,7 @@ export const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <div className="bottom-background__img"><img src="../src/assets/img/bottom-bg.png" alt="img" /></div>
+                            <div className="bottom-background__img"><img src={bottom_bg} alt="img" /></div>
                         </div>
                     </div>
                 </div>
@@ -25,7 +26,7 @@ export const Footer = () => {
                         <div className="col-sm-6 col-lg-3">
                             <div className="footer-logo">
                                 <Link className="footer-logo__link" to="/">
-                                    <img className="footer-logo__img" src="../src/assets/img/logo_white.png" alt="logo" />
+                                    <img className="footer-logo__img" src={logo} alt="logo" />
                                 </Link>
                             </div>
                             <ul className="footer-socials">

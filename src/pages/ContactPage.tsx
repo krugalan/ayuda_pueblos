@@ -24,7 +24,6 @@ export const ContactPage = () => {
 
                 </section>
             </main>
-            <PageFiller />
         </div>
     )
 }

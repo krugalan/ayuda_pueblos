@@ -4,6 +4,7 @@ import { contactEmail, phoneNumber } from '../constants'
 import { bottom_bg, logo } from '../assets/img';
 import { useModal } from '../hooks/useModal';
 import { DonationModal } from './DonationModal';
+import { PageFiller } from './PageFiller';
 
 const whatsappMessage = 'Hola Me gustaría recibir más información y de que formas se puede colaborar.';
 
@@ -16,6 +17,7 @@ export const Footer = () => {
     const customLink = baseUrl + phoneNumber + "&text=" + whatsappMessage + '&type=phone_number&app_absent=0';
     return (
         <div>
+            <PageFiller />
             <section className="bottom-background">
                 <div className="container">
                     <div className="row">

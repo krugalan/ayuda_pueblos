@@ -276,7 +276,6 @@ export const ShopPage = () => {
                             </div>
                         </div>
                     </section>
-                    <PageFiller />
                 </main>
 
                 <div className="shop__backdrop"></div>

@@ -202,7 +202,7 @@ export const DonorsPage = () => {
                     </div>
                 </div>
             </div>
-            <PageFiller />
+
         </div>
     )
 }

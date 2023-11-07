@@ -6,7 +6,7 @@ type MainPictureType = {
     title2?: string;
 }
 
-export const MainPicture = ({ imgURL, title, title2 }: MainPictureType) => {
+export const MainPicture = ({ imgURL, title, title2 = '' }: MainPictureType) => {
     return (<div>
 
         <picture>

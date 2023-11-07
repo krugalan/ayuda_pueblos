@@ -19,7 +19,7 @@ export const AboutPage = () => {
         <StatisticsSection />
         <TeamSection />
         <DonorsSection />
-        <PageFiller />
+
 
 
     </>

@@ -72,7 +72,6 @@ export const GalleryPage = () => {
                             </div>
                         </div>
                     </section>
-                    <PageFiller />
 
                 </main>
 

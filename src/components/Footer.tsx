@@ -9,12 +9,12 @@ import { PageFiller } from './PageFiller';
 const whatsappMessage = 'Hola Me gustaría recibir más información y de que formas se puede colaborar.';
 
 const baseUrl = 'https://api.whatsapp.com/send/?phone=';
+export const customLink = baseUrl + phoneNumber + "&text=" + whatsappMessage + '&type=phone_number&app_absent=0';
 
 export const Footer = () => {
 
     const { openModal, closeModal, activeModal } = useModal();
 
-    const customLink = baseUrl + phoneNumber + "&text=" + whatsappMessage + '&type=phone_number&app_absent=0';
     return (
         <div>
             <PageFiller />

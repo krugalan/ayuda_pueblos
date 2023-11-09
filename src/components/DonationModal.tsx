@@ -1,7 +1,7 @@
 import Modal from 'react-bootstrap/Modal';
 import { accountType, alias, bank } from '../constants';
 
-type DonationModalType = () => {
+type DonationModalType = {
     showModal: boolean;
     onHideModal: () => void
 }

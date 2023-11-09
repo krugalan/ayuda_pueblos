@@ -1,4 +1,4 @@
-import { BirdDoll } from "../../assets/img/images";
+import { BirdDoll, Vasija } from "../../assets/img/images";
 
 export const products = [
     {
@@ -21,8 +21,8 @@ export const products = [
     },
     {
         id: 3,
-        productName: "Muñecaso de pájaro",
+        productName: "Vasija",
         productPrice: "1500",
-        imgURL: BirdDoll
+        imgURL: Vasija
     },
 ]

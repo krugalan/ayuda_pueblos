@@ -9,19 +9,19 @@ export const products = [
     },
     {
         id: 1,
-        productName: "Muñeca de pájaro",
+        productName: "Muñeco de pájaro",
         productPrice: "800",
         imgURL: BirdDoll
     },
     {
         id: 2,
-        productName: "Muñeca de pájaro",
+        productName: "Muñequín de pájaro",
         productPrice: "200",
         imgURL: BirdDoll
     },
     {
         id: 3,
-        productName: "Muñeca de pájaro",
+        productName: "Muñecaso de pájaro",
         productPrice: "1500",
         imgURL: BirdDoll
     },

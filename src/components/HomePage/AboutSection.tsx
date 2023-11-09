@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { about_2, about_layout, about_layout_reverse, about_us } from '../../assets/img'
 
 
@@ -25,7 +26,7 @@ export const AboutSection = ({ inverted = false }: AboutSectionType) => {
                                     <img className="img--bg" src={about_us} alt="img" />
                                     <h4 className="info-box__title">We are Awesome Volounteer Team</h4>
                                     <p>Gray eel-catfish longnose whiptail catfish smalleye squaretail queen danio unicorn fish shortnose greeneye fusilier fish silver carp nibbler sharksucker tench lookdown catfish</p>
-                                    <a className="info-box__link" href="volunteer.html">Become a volounteer</a>
+                                    <Link className="info-box__link" to="/voluntarios">Volvete Voluntario</Link>
                                 </div>
                             </div>
                         </div>

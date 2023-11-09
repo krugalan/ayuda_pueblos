@@ -55,11 +55,11 @@ export const TestimonialsSection = () => {
             </section>
             <section className="section text-section"><img className="text-section__bg" src="../src/assets/img/text-section.png" alt="img" />
                 <div className="container">
-                    <div className="row">
+                    {/* <div className="row">
                         <div className="col-12 text-center">
-                            <h2 className="text-section__heading">Volunteer</h2>
+                            <h2 className="text-section__heading">Voluntarios</h2>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="row">
                         <div className="col-lg-8 offset-lg-4 col-xl-7 offset-xl-4">
                             <h3 className="text-section__title">Delivering help and hope <br />to children through sponsorship.</h3>

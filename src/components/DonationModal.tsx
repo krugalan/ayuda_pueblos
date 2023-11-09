@@ -1,6 +1,5 @@
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import { useModal } from '../hooks/useModal';
+import { accountType, alias, bank } from '../constants';
 
 type DonationModalType = () => {
     showModal: boolean;
@@ -9,31 +8,40 @@ type DonationModalType = () => {
 
 export const DonationModal = ({ showModal, onHideModal }: DonationModalType) => {
 
-    const { closeModal } = useModal();
     return (
         <Modal
             onHide={onHideModal}
-            size="lg"
+            size="md"
             aria-labelledby="contained-modal-title-vcenter"
             centered
             show={showModal}
         >
             <Modal.Header closeButton>
+                <h3 className='text-success'>
+                    Ayuda a pueblos Originarios:
+                </h3>
                 <Modal.Title id="contained-modal-title-vcenter">
-                    Datos para transferir
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <h4>Centered Modal</h4>
-                <p>
-                    Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                    dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                    consectetur ac, vestibulum at eros.
-                </p>
+                <div className='text-center'>
+                    <h4>Datos para Donar:</h4>
+                    <p>
+                        <strong>Banco: </strong>{bank}
+                        <br />
+                        <strong>Alias: </strong>{alias}
+                        <br />
+                        <strong>Tipo de Cuenta: </strong>{accountType}
+                    </p>
+                    <p className='fs-4 text- fw-semibold'>
+                        ASOCIACION CIVIL
+                        <br />
+                        AYUDA A PUEBLOS ORIGINALES
+                        <br />
+                        CUIT: 33-71666402-9
+                    </p>
+                </div>
             </Modal.Body>
-            <Modal.Footer>
-                {/* <Button onClick={closeModal}>Close</Button> */}
-            </Modal.Footer>
         </Modal>
     );
 }

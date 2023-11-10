@@ -1,7 +1,6 @@
 
 import { shop } from '../assets/img'
 import { MainPicture } from '../components/MainPicture'
-import { ProductComponent } from '../components/ShopPage/ProductComponent'
 
 export const ShopPage = () => {
 
@@ -142,7 +141,6 @@ export const ShopPage = () => {
                                                 </div>
                                             </div>
                                         </div> */}
-                                        <ProductComponent />
                                         {/* <div className="col-12 col-sm-6 col-md-4">
                                             <div className="shop-item">
                                                 <div className="shop-item__img"><a className="shop-item__add" href="#">

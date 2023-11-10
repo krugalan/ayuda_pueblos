@@ -1,4 +1,3 @@
-import React from 'react'
 import { video_block } from '../../assets/img'
 import { contactEmail, phoneNumber } from '../../constants'
 

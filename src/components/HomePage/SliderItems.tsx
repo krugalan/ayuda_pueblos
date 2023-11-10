@@ -1,4 +1,3 @@
-import React from 'react'
 import { SliderItem } from './SliderItem'
 import { blog_1, blog_2, blog_3 } from '../../assets/img'
 

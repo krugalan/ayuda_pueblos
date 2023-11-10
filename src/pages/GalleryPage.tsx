@@ -1,6 +1,5 @@
 
 import { Slider } from '../components/HomePage/Slider'
-import { PageFiller } from '../components/PageFiller'
 
 export const GalleryPage = () => {
     return (

@@ -1,7 +1,5 @@
 
-import { contactEmail, phoneNumber } from '../../constants'
 import { RRSSList } from '../RRSSList'
-import { video_block } from '../../assets/img'
 import { SliderItems } from './SliderItems'
 import { VideoSectionBlock } from './VideoSectionBlock'
 

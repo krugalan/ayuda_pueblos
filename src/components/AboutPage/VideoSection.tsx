@@ -1,4 +1,3 @@
-import React from 'react'
 import { video_frame, video_frame_layout } from '../../assets/img'
 
 export const VideoSection = () => {

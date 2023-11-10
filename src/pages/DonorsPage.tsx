@@ -1,5 +1,4 @@
 
-import { PageFiller } from '../components/PageFiller'
 import { MainPicture } from '../components/MainPicture'
 import { donors } from '../assets/img'
 

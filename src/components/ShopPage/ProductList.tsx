@@ -1,5 +1,5 @@
 import { ProductComponent } from './ProductComponent'
-import { products } from './products'
+import { products } from '../../data/products'
 
 export const ProductList = () => {
 

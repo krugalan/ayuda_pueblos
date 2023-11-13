@@ -1,4 +1,4 @@
-import { BirdDoll, Vasija } from "../../assets/img/images";
+import { BirdDoll, Vasija } from "../assets/img/images";
 
 export const products = [
     {

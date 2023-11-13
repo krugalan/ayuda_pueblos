@@ -7,14 +7,14 @@ export const VolunteersSection = () => {
                 <div className="container">
                     <div className="row align-items-end margin-bottom">
                         <div className="col-lg-9">
-                            <div className="heading heading--primary"><span className="heading__pre-title">What we Did</span>
-                                <h2 className="heading__title"><span>Helpo</span> <span>Projects</span></h2>
+                            <div className="heading heading--primary"><span className="heading__pre-title">¿Qué Hicimos?</span>
+                                <h2 className="heading__title"><span>Ayuda a Pueblos </span> <span>Proyectos</span></h2>
                                 <p className="no-margin-bottom">Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail, Canthigaster rostrata. Midshipman dartfish Modoc sucker, yellowtail kingfish </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="row no-gutters projects-masonry">
+                {/* <div className="row no-gutters projects-masonry">
                     <div className="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-1 projects-masonry__item--vertical">
                         <div className="projects-masonry__img"><img className="img--bg" src="../src/assets/img/projects_1.jpg" alt="img" /></div>
                         <div className="projects-masonry__text" >
@@ -90,7 +90,7 @@ export const VolunteersSection = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </section>
         </div>
     )

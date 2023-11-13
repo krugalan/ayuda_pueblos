@@ -2,9 +2,8 @@
 import { NavBar } from '../components/HomePage/NavBar'
 import { HeroSection } from '../components/HomePage/HeroSection'
 import { AboutSection } from '../components/HomePage/AboutSection'
-import { CauseComponent } from '../components/HomePage/CauseComponent'
+import { CausesHeaderList } from '../components/HomePage/CausesHeaederList'
 import { HelpSection } from '../components/HomePage/HelpSection'
-import { VolunteersSection } from '../components/HomePage/VolunteersSection'
 import { TestimonialsSection } from '../components/HomePage/TestimonialsSection'
 import { BlogHelpSection } from '../components/HomePage/BlogHelpSection'
 import { DonorsSection } from '../components/HomePage/DonorsSection'
@@ -18,9 +17,9 @@ export const HomePage = () => {
                 <NavBar />
                 <HeroSection />
                 <AboutSection />
-                <CauseComponent />
+                <CausesHeaderList />
                 <HelpSection />
-                <VolunteersSection />
+                {/* <VolunteersSection /> */}
                 <TestimonialsSection />
                 <BlogHelpSection />
                 <DonorsSection />

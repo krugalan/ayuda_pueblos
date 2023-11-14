@@ -15,22 +15,22 @@ export const VideoSectionBlock = () => {
                     </i>
                 </a>
             </div>
-            <div className="promo-pannel__phones">
-                <p className="promo-pannel__title">Teléfono:</p>
-                <a className="promo-pannel__link" href={`tel:${phoneNumber}`}>
-                    {phoneNumber}
-                </a>
-                <a className="promo-pannel__link" href={`tel:${phoneNumber}`}>
-                    {phoneNumber}
-                </a>
-            </div>
-            <div className="promo-pannel__email">
-                <p className="promo-pannel__title">
-                    Email
-                </p>
-                <a className="promo-pannel__link" href={`mailto:${contactEmail}`}>
-                    {contactEmail}
-                </a>
+
+            <div className='d-flex flex-row'>
+                <div className="promo-pannel__phones">
+                    <p className="promo-pannel__title">Teléfono:</p>
+                    <a className="promo-pannel__link" href={`tel:${phoneNumber}`}>
+                        {phoneNumber}
+                    </a>
+                </div>
+                <div className="promo-pannel__email ">
+                    <p className="promo-pannel__title ">
+                        Email
+                    </p>
+                    <a className="promo-pannel__link" href={`mailto:${contactEmail}`} target='_blank'>
+                        {contactEmail}
+                    </a>
+                </div>
             </div>
         </div>
     )

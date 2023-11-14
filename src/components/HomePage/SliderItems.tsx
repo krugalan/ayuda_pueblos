@@ -1,12 +1,15 @@
 import { SliderItem } from './SliderItem'
-import { blog_1, blog_2, blog_3 } from '../../assets/img'
+import { sliderItems } from '../../data/sliderItems'
 
 export const SliderItems = () => {
-    return (
+    return (<>
         <div className="carousel-inner">
-            <SliderItem actived img={blog_1} date='15 Feb. 2023' />
-            <SliderItem img={blog_2} date='15 Feb. 2023' />
-            <SliderItem img={blog_3} date='15 Feb. 2023' />
+            {
+                sliderItems.map((item) => (
+                    <SliderItem key={item.id} {...item} />
+                ))
+            }
         </div>
+    </>
     )
 }

@@ -1,29 +1,15 @@
 
+import { typography } from '../assets/img'
 import { Slider } from '../components/HomePage/Slider'
+import { MainPicture } from '../components/MainPicture'
 
 export const GalleryPage = () => {
     return (
         <div>
-            <Slider />
             <div className="page-wrapper">
                 <main className="main">
                     <section className="promo-primary">
-                        <picture>
-                            <source srcSet="../src/assets/img/typography.jpg" media="(min-width: 992px)" /><img className="img--bg" src="../src/assets/img/typography.jpg" alt="img" />
-                        </picture>
-                        <div className="promo-primary__description"> <span>Charity</span></div>
-                        <div className="container">
-
-                            <div className="row">
-                                <div className="col-auto">
-                                    <div className="align-container">
-                                        <div className="align-container__item"><span className="promo-primary__pre-title">Helpo</span>
-                                            <h1 className="promo-primary__title"><span>Gallery</span> <span>Masonry</span></h1>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <MainPicture title='Galería' imgURL={typography} />
                     </section>
                     <section className="section gallery">
                         <div className="container">
@@ -67,7 +53,7 @@ export const GalleryPage = () => {
                         </div>
                         <div className="container">
                             <div className="row">
-                                <div className="col-12 text-center"><a className="button gallery__button button--primary" href="#">More Images</a></div>
+                                <div className="col-12 text-center"><a className="button gallery__button button--primary" href="#">Ver Más</a></div>
                             </div>
                         </div>
                     </section>

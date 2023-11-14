@@ -8,15 +8,14 @@ export const Slider = () => {
         <>
             <RRSSList />
             <div id="carouselExampleCaptions" className="carousel slide">
-                <div className="carousel-indicators">
+                {/* <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+                </div> */}
 
                 <SliderItems />
 
-                <VideoSectionBlock />
 
                 <div className="slider__nav slider__nav--promo ">
 
@@ -34,6 +33,7 @@ export const Slider = () => {
 
                     </div>
                 </div>
+                <VideoSectionBlock />
             </div>
         </>
     )

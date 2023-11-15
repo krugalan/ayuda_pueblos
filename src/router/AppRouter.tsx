@@ -11,6 +11,7 @@ import { BlogPage } from '../pages/BlogPage';
 import { GalleryPage } from '../pages/GalleryPage';
 import { FAQPage } from '../pages/FAQPage';
 import { ShopPage } from '../pages/ShopPage';
+import { CausesPage } from '../pages/CausesPage';
 
 export const AppRouter = () => {
     return <>
@@ -19,7 +20,7 @@ export const AppRouter = () => {
             <Route path='/sobre-nosotros' element={<AboutPage />} />
             <Route path='/contacto' element={<ContactPage />} />
             <Route path='/donantes-y-colaboradores' element={<DonorsPage />} />
-            <Route path='/nuestras-causas' element={<DonorsPage />} />
+            <Route path='/nuestras-causas' element={<CausesPage />} />
             <Route path='/shop-solidario' element={<ShopPage />} />
             <Route path='/voluntarios' element={<VolunteersPage />} />
             <Route path='/eventos' element={<EventsPage />} />
@@ -27,7 +28,6 @@ export const AppRouter = () => {
             <Route path='/blog' element={<BlogPage />} />
             <Route path='/galeria' element={<GalleryPage />} />
             <Route path='/preguntas-frecuentes' element={<FAQPage />} />
-            <Route path='/nuestras-causas' element={<FAQPage />} />
 
 
 

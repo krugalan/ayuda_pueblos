@@ -11,9 +11,9 @@ export const MobileNavBarHome = () => {
                 <div className="aside-dropdown__item d-lg-none d-block">
                     <ul className="aside-menu">
                         <li className="aside-menu__item aside-menu__item--has-child aside-menu__item--active">
-                            <a className="aside-menu__link" href="javascript:void(0);">
+                            <Link className="aside-menu__link" to="/">
                                 <span>Inicio</span>
-                            </a>
+                            </Link>
                         </li>
 
                         <li className="aside-menu__item aside-menu__item--has-child">

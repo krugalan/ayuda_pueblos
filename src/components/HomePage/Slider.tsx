@@ -33,7 +33,7 @@ export const Slider = () => {
 
                     </div>
                 </div>
-                <VideoSectionBlock />
+                {/* <VideoSectionBlock /> */}
             </div>
         </>
     )

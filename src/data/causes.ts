@@ -38,3 +38,14 @@ export const causes = [
     },
 
 ]
+
+export const miniCauses = [
+    {
+        title: 'Servicio de agua',
+        description: 'La descripcion de esta causa',
+        category: 'string',
+        financialGoal: 'string',
+        pledged: 'string',
+        percentage: 'string',
+    }
+]

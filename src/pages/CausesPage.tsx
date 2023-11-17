@@ -1,9 +1,13 @@
 import { causes } from "../assets/img"
+import { CauseComponent } from "../components/CausesPage/CauseComponent"
+import { CauseComponentList } from "../components/CausesPage/CauseComponentList"
 import { MainPicture } from "../components/MainPicture"
 
 
 
 export const CausesPage = () => {
+
+
     return (
         <main className="main">
             <section className="promo-primary">
@@ -12,35 +16,14 @@ export const CausesPage = () => {
             <section className="section causes-inner">
                 <div className="container">
                     <div className="row offset-margin">
-                        <div className="col-md-6 col-lg-4">
+                        <CauseComponentList />
+
+                        {/* <div className="col-md-6 col-lg-4">
                             <div className="causes-item causes-item--primary">
                                 <div className="causes-item__body">
                                     <div className="causes-item__top">
-                                        <h6 className="causes-item__title"> <a href="cause-details.html">Water Delivery in Africa</a></h6>
-                                        <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail</p>
-                                    </div>
-                                    <div className="causes-item__img">
-                                        <div className="causes-item__badge" >Water Delivery</div><img className="img--bg" src="img/causes_1.jpg" alt="img" />
-                                    </div>
-                                    <div className="causes-item__lower">
-                                        <div className="progress-bar">
-                                            <div className="progress-bar__inner" >
-                                                <div className="progress-bar__value">78%</div>
-                                            </div>
-                                        </div>
-                                        <div className="causes-item__details-holder">
-                                            <div className="causes-item__details-item"><span>Goal: </span><span>25 000$</span></div>
-                                            <div className="causes-item__details-item text-right"><span>Pledged: </span><span>20 350$</span></div>
-                                        </div>
-                                    </div>
-                                </div><a className="button causes-item__button button--primary" href="#">+ Donate</a>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4">
-                            <div className="causes-item causes-item--primary">
-                                <div className="causes-item__body">
-                                    <div className="causes-item__top">
-                                        <h6 className="causes-item__title"> <a href="cause-details.html">Health in other Countries</a></h6>
+                                        <h6 className="causes-item__title">
+                                            <a href="cause-details.html">Health in other Countries</a></h6>
                                         <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail</p>
                                     </div>
                                     <div className="causes-item__img">
@@ -59,8 +42,8 @@ export const CausesPage = () => {
                                     </div>
                                 </div><a className="button causes-item__button button--primary" href="#">+ Donate</a>
                             </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4">
+                        </div> */}
+                        {/* <div className="col-md-6 col-lg-4">
                             <div className="causes-item causes-item--primary">
                                 <div className="causes-item__body">
                                     <div className="causes-item__top">
@@ -83,8 +66,8 @@ export const CausesPage = () => {
                                     </div>
                                 </div><a className="button causes-item__button button--primary" href="#">+ Donate	</a>
                             </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4">
+                        </div> */}
+                        {/* <div className="col-md-6 col-lg-4">
                             <div className="causes-item causes-item--primary">
                                 <div className="causes-item__body">
                                     <div className="causes-item__top">
@@ -107,8 +90,8 @@ export const CausesPage = () => {
                                     </div>
                                 </div><a className="button causes-item__button button--primary" href="#">+ Donate	</a>
                             </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4">
+                        </div> */}
+                        {/* <div className="col-md-6 col-lg-4">
                             <div className="causes-item causes-item--primary">
                                 <div className="causes-item__body">
                                     <div className="causes-item__top">
@@ -131,8 +114,8 @@ export const CausesPage = () => {
                                     </div>
                                 </div><a className="button causes-item__button button--primary" href="#">+ Donate</a>
                             </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4">
+                        </div> */}
+                        {/* <div className="col-md-6 col-lg-4">
                             <div className="causes-item causes-item--primary">
                                 <div className="causes-item__body">
                                     <div className="causes-item__top">
@@ -155,7 +138,7 @@ export const CausesPage = () => {
                                     </div>
                                 </div><a className="button causes-item__button button--primary" href="#">+ Donate</a>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className="container">

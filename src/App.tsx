@@ -6,12 +6,10 @@ import { Footer } from './components/Footer';
 const App = () => {
   return (
     <BrowserRouter>
-      <div>
-        <div className="page-wrapper">
-          <NavBar />
-          <AppRouter />
-          <Footer />
-        </div>
+      <div className="page-wrapper">
+        <NavBar />
+        <AppRouter />
+        <Footer />
       </div>
     </BrowserRouter>
   )

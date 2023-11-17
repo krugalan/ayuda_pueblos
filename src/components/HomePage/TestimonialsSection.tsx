@@ -33,7 +33,8 @@ export const TestimonialsSection = () => {
                     <div className="row">
                         <div className="col-lg-8 offset-lg-4 col-xl-7 offset-xl-4">
                             <h3 className="text-section__title">Delivering help and hope <br />to children through sponsorship.</h3>
-                            <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail, Canthigaster rostrata. Midshipman dartfish Modoc sucker, yellowtail kingfish</p><a className="button button--primary" href="#">Become a Volunteer</a>
+                            <p>Sharksucker sea toad candiru rocket danio tilefish stingray deepwater stingray Sacramento splittail, Canthigaster rostrata. Midshipman dartfish Modoc sucker, yellowtail kingfish</p>
+                            <a className="button button--primary" href="#">Become a Volunteer</a>
                         </div>
                     </div>
                 </div>

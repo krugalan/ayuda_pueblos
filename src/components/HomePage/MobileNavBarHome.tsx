@@ -59,8 +59,13 @@ export const MobileNavBarHome = () => {
                             <Link className="aside-menu__link" to="/contacto">Contacto</Link>
                         </li>
                     </ul>
-                    <div className="aside-inner"><span className="aside-inner__title">Email</span><a className="aside-inner__link" href="mailto:support@helpo.org">support@helpo.org</a></div>
-                    <div className="aside-inner"><span className="aside-inner__title">Phone numbers</span><a className="aside-inner__link" href="tel:+180012345678">+ 1800 - 123 456 78</a><a className="aside-inner__link" href="tel:+18009756511">+ 1800 - 975 65 11</a></div>
+                    <div className="aside-inner"><span className="aside-inner__title">Email</span>
+                        <a className="aside-inner__link" href="mailto:support@helpo.org">support@helpo.org</a>
+                    </div>
+                    <div className="aside-inner"><span className="aside-inner__title">Phone numbers</span>
+                        <a className="aside-inner__link" href="tel:+180012345678">+ 1800 - 123 456 78</a>
+                        <a className="aside-inner__link" href="tel:+18009756511">+ 1800 - 975 65 11</a>
+                    </div>
                     <ul className="aside-socials">
                         <li className="aside-socials__item"><a className="aside-socials__link" href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
                         <li className="aside-socials__item"><a className="aside-socials__link" href="#"><i className="fa fa-google-plus" aria-hidden="true"></i></a></li>

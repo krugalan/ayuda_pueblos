@@ -10,7 +10,8 @@ export const ContactSection = () => {
                     <div className="row offset-margin">
                         <div className="col-sm-6 col-lg-3">
                             <div className="icon-item">
-                                <div className="icon-item__img"><img className="img--layout" src={icon_1_1} alt="img" />
+                                <div className="icon-item__img">
+                                    <img className="img--layout" src={icon_1_1} alt="img" />
                                     <svg className="icon icon-item__icon icon--red">
                                         <use xlinkHref="#location-pin"></use>
                                     </svg>
@@ -22,7 +23,8 @@ export const ContactSection = () => {
                         </div>
                         <div className="col-sm-6 col-lg-3">
                             <div className="icon-item">
-                                <div className="icon-item__img"><img className="img--layout" src={icon_2_2} alt="img" />
+                                <div className="icon-item__img">
+                                    <img className="img--layout" src={icon_2_2} alt="img" />
                                     <svg className="icon icon-item__icon icon--orange">
                                         <use xlinkHref="#phone-call"></use>
                                     </svg>
@@ -35,7 +37,8 @@ export const ContactSection = () => {
                         </div>
                         <div className="col-sm-6 col-lg-3">
                             <div className="icon-item">
-                                <div className="icon-item__img"><img className="img--layout" src={icon_3_3} alt="img" />
+                                <div className="icon-item__img">
+                                    <img className="img--layout" src={icon_3_3} alt="img" />
                                     <svg className="icon icon-item__icon icon--green">
                                         <use xlinkHref="#envelope"></use>
                                     </svg>

@@ -1,6 +1,5 @@
 
 import { typography } from '../assets/img'
-import { Slider } from '../components/HomePage/Slider'
 import { MainPicture } from '../components/MainPicture'
 
 export const GalleryPage = () => {

@@ -1,7 +1,7 @@
 
 import { RRSSList } from '../RRSSList'
 import { SliderItems } from './SliderItems'
-import { VideoSectionBlock } from './VideoSectionBlock'
+// import { VideoSectionBlock } from './VideoSectionBlock'
 
 export const Slider = () => {
     return (

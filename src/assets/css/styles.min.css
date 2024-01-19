@@ -21142,7 +21142,7 @@ header.header--intro .button {
     width: 45px;
     border: 2px solid #efc940;
     border-radius: 50%;
-    bacground: transparent;
+    background: transparent;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s

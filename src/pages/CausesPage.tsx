@@ -1,5 +1,4 @@
 import { causes } from "../assets/img"
-import { CauseComponent } from "../components/CausesPage/CauseComponent"
 import { CauseComponentList } from "../components/CausesPage/CauseComponentList"
 import { MainPicture } from "../components/MainPicture"
 

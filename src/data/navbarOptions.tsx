@@ -13,10 +13,10 @@ type OptionType = {
 
 }
 
-type NavbarPagesOptionType = {
-    name: string;
-    href: PathName;
-}
+// type NavbarPagesOptionType = {
+//     name: string;
+//     href: PathName;
+// }
 
 
 export const NavOptions = () => {
@@ -70,49 +70,49 @@ export const NavOptions = () => {
 
 
 
-const aboutPages: NavbarPagesOptionType[] = [
-    {
-        name: "Sobre Nosotros",
-        href: "/sobre-nosotros",
-    },
-    {
-        name: "Volvete Voluntario",
-        href: "/voluntarios",
-    },
-    {
-        name: "Historias",
-        href: "/historias-de-vida",
-    },
-    {
-        name: "Galería",
-        href: "/galeria",
-    },
-    {
-        name: "Donantes y Colaboradores",
-        href: "/donantes-y-colaboradores",
-    },
-    {
-        name: "Eventos",
-        href: "/eventos",
-    },
-    {
-        name: "Blog",
-        href: "/blog",
-    },
-    {
-        name: "Preguntas Frecuentes",
-        href: "/preguntas-frecuentes",
-    },
-]
+// const aboutPages: NavbarPagesOptionType[] = [
+//     {
+//         name: "Sobre Nosotros",
+//         href: "/sobre-nosotros",
+//     },
+//     {
+//         name: "Volvete Voluntario",
+//         href: "/voluntarios",
+//     },
+//     {
+//         name: "Historias",
+//         href: "/historias-de-vida",
+//     },
+//     {
+//         name: "Galería",
+//         href: "/galeria",
+//     },
+//     {
+//         name: "Donantes y Colaboradores",
+//         href: "/donantes-y-colaboradores",
+//     },
+//     {
+//         name: "Eventos",
+//         href: "/eventos",
+//     },
+//     {
+//         name: "Blog",
+//         href: "/blog",
+//     },
+//     {
+//         name: "Preguntas Frecuentes",
+//         href: "/preguntas-frecuentes",
+//     },
+// ]
 
-const shopPages: NavbarPagesOptionType[] = [
-    {
-        name: "Catálogo",
-        href: "/shop-solidario",
-    },
-    {
-        name: "Carrito",
-        href: "/carrito",
-    },
+// const shopPages: NavbarPagesOptionType[] = [
+//     {
+//         name: "Catálogo",
+//         href: "/shop-solidario",
+//     },
+//     {
+//         name: "Carrito",
+//         href: "/carrito",
+//     },
 
-]
+// ]

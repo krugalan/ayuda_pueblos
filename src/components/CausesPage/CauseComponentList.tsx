@@ -1,4 +1,3 @@
-import React from 'react'
 import { miniCauses } from '../../data/causes'
 import { CauseComponent } from './CauseComponent'
 

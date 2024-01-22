@@ -87,7 +87,12 @@ export const MobileNavBarHome = ({ offcanvasOpen, setOffcanvasOpen }: MobileNavB
 
             {/* <button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button> */}
 
-            <div className={`offcanvas offcanvas-start ${offcanvasOpen ? "show" : ""}`} data-bs-scroll="true" tabIndex={-1} id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div className={`offcanvas offcanvas-start ${offcanvasOpen ? "show" : ""}`}
+                data-bs-scroll="true"
+                tabIndex={-1}
+                id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel"
+            >
                 <div className="offcanvas-header">
                     <h5 className="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
                     <button type="button" onClick={closeOffcanvas} className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>

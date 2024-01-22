@@ -4,20 +4,34 @@ import { Link } from 'react-router-dom';
 import { useModal } from '../../hooks/useModal';
 import { DonationModal } from '../DonationModal';
 import { NavOptions } from '../../data/navbarOptions';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 
 export const NavBar = () => {
 
     const { openModal, activeModal, closeModal } = useModal();
-    const [offcanvasOpen, setOffcanvasOpen] = useState(false)
+    const [whiteNavBar, setWhiteNavBar] = useState(false);
+    const [offcanvasOpen, setOffcanvasOpen] = useState(false);
 
     const handleOffcanvasButton = () => {
         setOffcanvasOpen(open => !open);
     }
+
+
+
+    window.onscroll = function () {
+        var y = window.scrollY;
+        if (y === 0) {
+            setWhiteNavBar(false);
+        }
+        else {
+            setWhiteNavBar(true);
+        }
+    };
+
     return (
         <div>
-            <header className="header header--front">
+            <header className={`${(whiteNavBar) ? "header header--front" : "header"}`}>
                 <div className="container-fluid">
                     <div className="row no-gutters justify-content-between">
                         <div className="col-auto d-flex  align-items-center">
@@ -30,15 +44,17 @@ export const NavBar = () => {
                                         <MobileNavBarHome offcanvasOpen={offcanvasOpen} setOffcanvasOpen={setOffcanvasOpen} />
                                     </span>
                                 </button>
-                                {/* <button onClick={handleOffcanvasButton} className="dropdown-trigger__item">
-
-
-                                </button> */}
                             </div>
                             <div className="header-logo">
                                 <Link className="header-logo__link" to="/">
-                                    <img className="header-logo__img logo--light" src={logo} alt="logo" />
-                                    <img className="header-logo__img logo--dark" src={logo} alt="logo" />
+                                    {
+                                        (whiteNavBar)
+                                            ?
+                                            <img className="header-logo__img logo--dark" src={logo} alt="logo" />
+                                            :
+                                            <img className="header-logo__img logo--light" src={logo} alt="logo" />
+
+                                    }
                                 </Link>
                             </div>
                         </div>
@@ -70,7 +86,7 @@ export const NavBar = () => {
                                                             <li><Link to="/preguntas-frecuentes"><span>Preguntas Frecuentes</span></Link></li>
                                                         </ul>}
                                                     {
-                                                        (option.hasChildren && option.name == "Shop Solidario") &&
+                                                        (option.hasChildren && option.name === "Shop Solidario") &&
                                                         <ul className="main-menu__sub-list">
                                                             <li><Link to="/shop-solidario"><span>Catálogo</span></Link></li>
                                                             <li><Link to="/shop-solidario/carrito"><span>Carrito</span></Link></li>

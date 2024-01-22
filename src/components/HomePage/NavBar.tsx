@@ -4,13 +4,18 @@ import { Link } from 'react-router-dom';
 import { useModal } from '../../hooks/useModal';
 import { DonationModal } from '../DonationModal';
 import { NavOptions } from '../../data/navbarOptions';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 
-export const NavBar = () => {
+type NavBarType = {
+    whiteNavBar: boolean;
+    setWhiteNavBar: (val: boolean) => void
+}
+
+export const NavBar = ({ whiteNavBar, setWhiteNavBar }: NavBarType) => {
 
     const { openModal, activeModal, closeModal } = useModal();
-    const [whiteNavBar, setWhiteNavBar] = useState(false);
+    // 
     const [offcanvasOpen, setOffcanvasOpen] = useState(false);
 
     const handleOffcanvasButton = () => {

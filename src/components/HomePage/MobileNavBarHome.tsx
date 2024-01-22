@@ -1,106 +1,119 @@
-
-// import { Link } from 'react-router-dom';
+import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
+import { NavOptions } from "../../data/navbarOptions";
+import { contactEmail, phoneNumber } from "../../constants";
+import { useModal } from "../../hooks/useModal";
 
 
 type MobileNavBarHomeType = {
-    offcanvasOpen: boolean;
-    setOffcanvasOpen: (val: boolean) => void;
+    asideMenuOpen: boolean;
+    handleAsideMenu: () => void
 }
 
-export const MobileNavBarHome = ({ offcanvasOpen, setOffcanvasOpen }: MobileNavBarHomeType) => {
-
-
-    const closeOffcanvas = () => {
-
-        setOffcanvasOpen(false);
-    }
+export const MobileNavBarHome = ({ asideMenuOpen, handleAsideMenu }: MobileNavBarHomeType) => {
+    const { openModal } = useModal();
 
     return (
         <>
+            <button onClick={handleAsideMenu}
+                style={{ marginRight: 20 }}
+                className="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+                aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                <GiHamburgerMenu size={30} />
+            </button>
+
+            <div className={`aside-dropdown ${asideMenuOpen ? "aside-dropdown--active" : ""}`}>
+                <div className="aside-dropdown__inner">
+                    <button className="aside-dropdown__close" onClick={handleAsideMenu} style={{ border: "none" }}>
+                        <svg className="icon">
+                            <use xlinkHref="#close"></use>
+                        </svg>
+                    </button>
+                    <div className="aside-dropdown__item d-lg-none d-block">
+                        {
+                            NavOptions().map((option, index) => (
+                                <li key={index} className='main-menu__item'>
+                                    <Link
+                                        to={option.href}
+                                        className={`main-menu__item main-menu__link ${(option.hasChildren) ? "main-menu__item--has-child" : ""}`}
+                                        style={{ margin: 0 }}
+                                    >
+                                        <span>
+                                            {option.name}
+                                        </span>
+                                        {
+                                            (option.hasChildren && option.name == "Acerca De")
+                                            &&
+                                            <ul className="main-menu__sub-list sub-list--style-2" style={{ display: "block" }}>
+                                                <li><Link to="/sobre-nosotros"><span>Sobre Nosotros</span></Link></li>
+                                                <li><Link to="/donantes-y-colaboradores"><span>Donantes y Colaboradores</span></Link></li>
+                                                <li><Link to="/voluntarios"><span>Volvete Voluntario</span></Link></li>
+                                                <li><Link to="/eventos"><span>Eventos</span></Link></li>
+                                                <li><Link to="/historias-de-vida"><span>Historias</span></Link></li>
+                                                <li><Link to="/blog"><span>Blog</span></Link></li>
+                                                <li><Link to="/galeria"><span>Galería</span></Link></li>
+                                                <li><Link to="/preguntas-frecuentes"><span>Preguntas Frecuentes</span></Link></li>
+                                            </ul>}
+                                        {
+                                            (option.hasChildren && option.name === "Shop Solidario") &&
+                                            <ul className="main-menu__sub-list">
+                                                <li><Link to="/shop-solidario"><span>Catálogo</span></Link></li>
+                                                <li><Link to="/shop-solidario/carrito"><span>Carrito</span></Link></li>
+                                            </ul>
+                                        }
+                                    </Link>
+                                </li>
+                            ))
+
+                        }
 
 
-            {/* <div className="aside-dropdown__item d-lg-none d-block">
-                <ul className="aside-menu">
-                    <li className="aside-menu__item aside-menu__item--has-child aside-menu__item--active">
-                        <Link className="aside-menu__link" to="/">
-                            <span>Inicio</span>
-                        </Link>
-                    </li>
 
-                    <li className="aside-menu__item aside-menu__item--has-child">
-                        <Link className="aside-menu__link" to="/sobre-nosotros">
-                            <span>Acerca De</span>
-                        </Link>
-                        <ul className="aside-menu__sub-list">
-                            <li><Link to="/sobre-nosotros"><span>Sobre Nosotros</span></Link></li>
-                            <li><Link to="/donantes-y-colaboradores"><span>Donantes y Colaboradores</span></Link></li>
-                            <li><Link to="/voluntarios"><span>Volvete Voluntario</span></Link></li>
-                            <li><Link to="/eventos"><span>Eventos</span></Link></li>
-                            <li><Link to="/historias-de-vida"><span>Historias</span></Link></li>
-                            <li><Link to="/blog"><span>Blog</span></Link></li>
-                            <li><Link to="/galeria"><span>Galería</span></Link></li>
-                            <li><Link to="/preguntas-frecuentes"><span>Preguntas Frecuentes</span></Link></li>
+
+                        <li className="aside-menu__item aside-menu__item--has-child">
+                            <a className="aside-menu__link" href="javascript:void(0);"><span>Pages</span></a>
+                            <ul className="aside-menu__sub-list" style={{ display: "block" }}>
+                                <li><Link to="/sobre-nosotros"><span>Sobre Nosotros</span></Link></li>
+                                <li><Link to="/donantes-y-colaboradores"><span>Donantes y Colaboradores</span></Link></li>
+                                <li><Link to="/voluntarios"><span>Volvete Voluntario</span></Link></li>
+                                <li><Link to="/eventos"><span>Eventos</span></Link></li>
+                                <li><Link to="/historias-de-vida"><span>Historias</span></Link></li>
+                                <li><Link to="/blog"><span>Blog</span></Link></li>
+                                <li><Link to="/galeria"><span>Galería</span></Link></li>
+                                <li><Link to="/preguntas-frecuentes"><span>Preguntas Frecuentes</span></Link></li>
+                            </ul>
+                        </li>
+                    </div>
+
+                    <div className="aside-dropdown__item">
+                        <ul className="aside-menu">
+                            <li className="aside-menu__item"><a className="aside-menu__link" href="#">Documentos</a></li>
+                            <li className="aside-menu__item"><a className="aside-menu__link" href="#">Información</a></li>
+                            <li className="aside-menu__item"><a className="aside-menu__link" href="#">Additional Pages</a></li>
+                            <li className="aside-menu__item"><a className="aside-menu__link" href="#">Elements</a></li>
+                            <li className="aside-menu__item"><a className="aside-menu__link" href="#">Contacto</a></li>
                         </ul>
-                    </li>
-                    <li className="aside-menu__item aside-menu__item--has-child">
-                        <Link className="aside-menu__link" to="/nuestras-causas">
-                            <span>Nuestras Causas</span>
-                        </Link>
-                    </li>
+                        <div className="aside-inner"><span className="aside-inner__title">Email</span><a className="aside-inner__link" href={`mailto:${contactEmail}`}>{contactEmail}</a></div>
+                        <div className="aside-inner"><span className="aside-inner__title">Phone numbers</span>
+                            <a className="aside-inner__link" href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+                            <a className="aside-inner__link" href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+                        </div>
+                        <ul className="aside-socials">
+                            <li className="aside-socials__item"><a className="aside-socials__link" href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li className="aside-socials__item"><a className="aside-socials__link" href="#"><i className="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li className="aside-socials__item"><a className="aside-socials__link aside-socials__link--active" href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li className="aside-socials__item"><a className="aside-socials__link" href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        </ul>
 
-                    <li className="aside-menu__item">
-                        <a className="aside-menu__link" href="contacts.html">
-                            <span>Contactanos</span>
-                        </a>
-                    </li>
+                    </div>
 
-                </ul>
-            </div>
-            <div className="aside-dropdown__item">
-                <ul className="aside-menu">
-                    <li className="aside-menu__item">
-                        <Link className="aside-menu__link" to="#">Información</Link>
-                    </li>
-                    <li className="aside-menu__item">
-                        <Link className="aside-menu__link" to="/contacto">Contacto</Link>
-                    </li>
-                </ul>
-                <div className="aside-inner"><span className="aside-inner__title">Email</span>
-                    <a className="aside-inner__link" href="mailto:support@helpo.org">support@helpo.org</a>
-                </div>
-                <div className="aside-inner"><span className="aside-inner__title">Phone numbers</span>
-                    <a className="aside-inner__link" href="tel:+180012345678">+ 1800 - 123 456 78</a>
-                    <a className="aside-inner__link" href="tel:+18009756511">+ 1800 - 975 65 11</a>
-                </div>
-                <ul className="aside-socials">
-                    <li className="aside-socials__item"><a className="aside-socials__link" href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li className="aside-socials__item"><a className="aside-socials__link" href="#"><i className="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                    <li className="aside-socials__item"><a className="aside-socials__link aside-socials__link--active" href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li className="aside-socials__item"><a className="aside-socials__link" href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-            <div className="aside-dropdown__item"><a className="button button--squared" href="#"><span>Donar</span></a></div>
-
-
-            <div className="aside-dropdown">
-            </div> */}
-
-            {/* <button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button> */}
-
-            <div className={`offcanvas offcanvas-start ${offcanvasOpen ? "show" : ""}`}
-                data-bs-scroll="true"
-                tabIndex={-1}
-                id="offcanvasWithBothOptions"
-                aria-labelledby="offcanvasWithBothOptionsLabel"
-            >
-                <div className="offcanvas-header">
-                    <h5 className="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
-                    <button type="button" onClick={closeOffcanvas} className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div className="offcanvas-body">
-                    <p>Try scrolling the rest of the page to see this option in action.</p>
+                    <div className="aside-dropdown__item">
+                        <a className="button button--squared" onClick={openModal}><span>Donar</span></a>
+                    </div>
                 </div>
             </div>
+
+
         </>
     )
 }

@@ -15,7 +15,7 @@ type NavBarType = {
 export const NavBar = ({ whiteNavBar, setWhiteNavBar }: NavBarType) => {
 
     const { openModal, activeModal, closeModal } = useModal();
-    // 
+
     const [offcanvasOpen, setOffcanvasOpen] = useState(false);
 
     const handleOffcanvasButton = () => {
@@ -36,7 +36,7 @@ export const NavBar = ({ whiteNavBar, setWhiteNavBar }: NavBarType) => {
 
     return (
         <div>
-            <header className={`${(whiteNavBar) ? "header header--front" : "header"}`}>
+            <header className={`${(whiteNavBar) ? "header header--front header--fixed" : "header"}`}>
                 <div className="container-fluid">
                     <div className="row no-gutters justify-content-between">
                         <div className="col-auto d-flex  align-items-center">

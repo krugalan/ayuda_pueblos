@@ -1,5 +1,4 @@
 
-import { NavBar } from '../components/HomePage/NavBar'
 import { HeroSection } from '../components/HomePage/HeroSection'
 import { AboutSection } from '../components/HomePage/AboutSection'
 import { CausesHeaderList } from '../components/HomePage/CausesHeaederList'
@@ -14,7 +13,7 @@ export const HomePage = () => {
     return (
         <div>
             <div className="page-wrapper">
-                <NavBar />
+                {/* <NavBar /> */}
                 <HeroSection />
                 <AboutSection />
                 <CausesHeaderList />

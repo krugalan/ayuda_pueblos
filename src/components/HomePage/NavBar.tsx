@@ -7,6 +7,9 @@ import { useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MobileNavBarHome } from './MobileNavBarHome';
 import { contactEmail, phoneNumber } from '../../constants';
+import { useDispatch, useSelector } from 'react-redux';
+import { navbarSelector } from '../../modules/navbar/selectors';
+import { closeNavbar, openNavbar } from '../../modules/navbar/actions';
 
 type NavBarType = {
     whiteNavBar: boolean;
@@ -16,11 +19,15 @@ type NavBarType = {
 export const NavBar = ({ whiteNavBar, setWhiteNavBar }: NavBarType) => {
 
     const { openModal, activeModal, closeModal } = useModal();
+    // const {} = useSelector((state:RootState)=>state.navbar);
+    // const [asideMenuOpen, setAsideMenuOpen] = useState(false);
 
-    const [asideMenuOpen, setAsideMenuOpen] = useState(false);
+    const asideMenuOpen = useSelector(navbarSelector);
+    const dispatch = useDispatch();
 
     const handleAsideMenu = () => {
-        setAsideMenuOpen(open => !open);
+
+        dispatch(asideMenuOpen ? closeNavbar() : openNavbar());
     }
 
 

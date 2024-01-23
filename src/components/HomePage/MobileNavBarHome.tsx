@@ -5,6 +5,9 @@ import { contactEmail, phoneNumber } from "../../constants";
 import { useModal } from "../../hooks/useModal";
 import { useState } from "react";
 import { DonationModal } from "../DonationModal";
+import { useDispatch, useSelector } from "react-redux";
+import { navbarSelector } from "../../modules/navbar/selectors";
+import { closeNavbar } from "../../modules/navbar/actions";
 
 
 type MobileNavBarHomeType = {
@@ -18,16 +21,20 @@ export const MobileNavBarHome = ({ asideMenuOpen, handleAsideMenu }: MobileNavBa
     const [aboutPagesOpen, setAboutPagesOpen] = useState(false);
     const [shopPagesOpen, setShopPagesOpen] = useState(false);
 
+
+    const dispatch = useDispatch();
+
     const handleAboutPages = () => {
         setAboutPagesOpen(!aboutPagesOpen);
-
     }
 
     const handleShopPages = () => {
         setShopPagesOpen(!shopPagesOpen);
-
     }
 
+    const closeAsideMenu = () => {
+        dispatch(closeNavbar());
+    }
 
     return (
         <>
@@ -64,29 +71,31 @@ export const MobileNavBarHome = ({ asideMenuOpen, handleAsideMenu }: MobileNavBa
                                             :
                                             (option.hasChildren && option.name === "Shop Solidario")
                                                 ?
-                                                () => { handleShopPages() } : () => { }
+                                                () => { handleShopPages() } : closeAsideMenu
                                         }
+
+
                                     >
                                         <span className="aside-menu__link">{option.name}</span>
                                         {
                                             (option.hasChildren && option.name === "Acerca De")
                                             &&
                                             <ul className="aside-menu__sub-list" style={{ display: aboutPagesOpen ? "block" : "none" }}>
-                                                <li><Link to="/sobre-nosotros"><span>Sobre Nosotros</span></Link></li>
-                                                <li><Link to="/donantes-y-colaboradores"><span>Donantes y Colaboradores</span></Link></li>
-                                                <li><Link to="/voluntarios"><span>Volvete Voluntario</span></Link></li>
-                                                <li><Link to="/eventos"><span>Eventos</span></Link></li>
-                                                <li><Link to="/historias-de-vida"><span>Historias</span></Link></li>
-                                                <li><Link to="/blog"><span>Blog</span></Link></li>
-                                                <li><Link to="/galeria"><span>Galería</span></Link></li>
-                                                <li><Link to="/preguntas-frecuentes"><span>Preguntas Frecuentes</span></Link></li>
+                                                <li><Link onClick={closeAsideMenu} to="/sobre-nosotros"><span>Sobre Nosotros</span></Link></li>
+                                                <li><Link onClick={closeAsideMenu} to="/donantes-y-colaboradores"><span>Donantes y Colaboradores</span></Link></li>
+                                                <li><Link onClick={closeAsideMenu} to="/voluntarios"><span>Volvete Voluntario</span></Link></li>
+                                                <li><Link onClick={closeAsideMenu} to="/eventos"><span>Eventos</span></Link></li>
+                                                <li><Link onClick={closeAsideMenu} to="/historias-de-vida"><span>Historias</span></Link></li>
+                                                <li><Link onClick={closeAsideMenu} to="/blog"><span>Blog</span></Link></li>
+                                                <li><Link onClick={closeAsideMenu} to="/galeria"><span>Galería</span></Link></li>
+                                                <li><Link onClick={closeAsideMenu} to="/preguntas-frecuentes"><span>Preguntas Frecuentes</span></Link></li>
                                             </ul>
                                         }
                                         {
                                             (option.hasChildren && option.name === "Shop Solidario") &&
                                             <ul className="aside-menu__sub-list" style={{ display: shopPagesOpen ? "block" : "none" }}>
-                                                <li><Link to="/shop-solidario"><span>Catálogo</span></Link></li>
-                                                <li><Link to="/shop-solidario/carrito"><span>Carrito</span></Link></li>
+                                                <li><Link onClick={closeAsideMenu} to="/shop-solidario"><span>Catálogo</span></Link></li>
+                                                <li><Link onClick={closeAsideMenu} to="/shop-solidario/carrito"><span>Carrito</span></Link></li>
                                             </ul>
                                         }
                                     </Link>

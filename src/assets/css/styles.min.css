@@ -19424,15 +19424,19 @@ a:hover {
 
 .aside-dropdown__item:first-of-type,
 .aside-dropdown__item:nth-of-type(2) {
-    padding: 0 65px
+    padding: 0 30px
 }
 
 .aside-dropdown__item:nth-of-type(2) {
     margin-top: 50px
 }
 
-.aside-dropdown__item:nth-of-type(3) {
+.mobile--aside__item {
     padding: 0 30px;
+}
+
+.aside-dropdown__item:nth-of-type(3) {
+    padding: 0 65px;
     margin-top: 50px
 }
 
@@ -19670,7 +19674,10 @@ header.header .button {
     display: none
 }
 
+
+
 @media only screen and (min-width:576px) {
+
     header.header .button {
         display: -webkit-box;
         display: -ms-flexbox;

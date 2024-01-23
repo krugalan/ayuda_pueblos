@@ -1,10 +1,10 @@
-import { blog_2 } from "../assets/img";
+import { contacts } from "../assets/img";
 import { SliderItemType } from "../components/HomePage/SliderItem";
 
 export const sliderItems: SliderItemType[] = [
     {
         id: 0,
-        img: blog_2,
+        img: contacts,
         date: "20 abril, 2023",
         actived: true,
         categories: ['Comunidad'],
@@ -15,7 +15,7 @@ export const sliderItems: SliderItemType[] = [
     },
     {
         id: 1,
-        img: blog_2,
+        img: contacts,
         date: "04 mayo, 2023",
         actived: false,
         categories: ['Comunidad'],
@@ -26,7 +26,7 @@ export const sliderItems: SliderItemType[] = [
     },
     {
         id: 2,
-        img: blog_2,
+        img: contacts,
         date: "04 junio, 2023",
         actived: false,
         categories: ['Comunidad', 'Salud y Bienestar'],

@@ -17,15 +17,14 @@ export const DonationModal = ({ showModal, onHideModal }: DonationModalType) => 
             show={showModal}
         >
             <Modal.Header closeButton>
-                <h3 className='text-success'>
-                    Ayuda a pueblos Originarios:
+                <h3 className='text-success'  >
+                    Datos para Donar
                 </h3>
                 <Modal.Title id="contained-modal-title-vcenter">
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <div className='text-center'>
-                    <h4>Datos para Donar:</h4>
                     <p>
                         <strong>Banco: </strong>{bank}
                         <br />

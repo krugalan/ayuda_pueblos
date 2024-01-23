@@ -68,12 +68,9 @@ export const NavBar = ({ whiteNavBar, setWhiteNavBar }: NavBarType) => {
                                             <div className="aside-inner"><span className="aside-inner__title">Email</span><a className="aside-inner__link" href={`mailto:${contactEmail}`}>{contactEmail}</a></div>
                                             <div className="aside-inner"><span className="aside-inner__title">Números de Contacto</span>
                                                 <a className="aside-inner__link" href={`tel:${phoneNumber}`}>{phoneNumber}</a>
-                                                <a className="aside-inner__link" href={`tel:${phoneNumber}`}>{phoneNumber}</a>
                                             </div>
                                             <ul className="aside-socials">
                                                 <li className="aside-socials__item"><a className="aside-socials__link" href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                                <li className="aside-socials__item"><a className="aside-socials__link" href="#"><i className="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                                <li className="aside-socials__item"><a className="aside-socials__link aside-socials__link--active" href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
                                                 <li className="aside-socials__item"><a className="aside-socials__link" href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
                                             </ul>
                                             <div className="aside-dropdown__item d-flex" >

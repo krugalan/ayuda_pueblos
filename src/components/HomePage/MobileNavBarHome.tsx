@@ -48,19 +48,24 @@ export const MobileNavBarHome = ({ asideMenuOpen, handleAsideMenu }: MobileNavBa
 
 
 
-                    <div className="aside-dropdown__item d-lg-none d-block">
+                    <div className="aside-dropdown__item ">
                         {
                             MobileNavOptions().map((option, index) => (
 
-                                <li key={index} className="aside-menu__item" >
+                                <li key={index} className="aside-menu__item"  >
 
                                     <Link
                                         to={option.href!}
                                         className={`aside-menu__item aside-menu__link ${(option.hasChildren) ? "aside-menu__item--has-child" : ""}`}
                                         style={{ margin: 0 }}
-                                        onClick={(option.hasChildren && option.name === "Acerca De") ? () => {
-                                            handleAboutPages();
-                                        } : (option.hasChildren && option.name === "Shop Solidario") ? () => { handleShopPages() } : () => { }}
+                                        onClick={(option.hasChildren && option.name === "Acerca De")
+                                            ?
+                                            () => { handleAboutPages(); }
+                                            :
+                                            (option.hasChildren && option.name === "Shop Solidario")
+                                                ?
+                                                () => { handleShopPages() } : () => { }
+                                        }
                                     >
                                         <span className="aside-menu__link">{option.name}</span>
                                         {
@@ -102,12 +107,9 @@ export const MobileNavBarHome = ({ asideMenuOpen, handleAsideMenu }: MobileNavBa
                         <div className="aside-inner"><span className="aside-inner__title">Email</span><a className="aside-inner__link" href={`mailto:${contactEmail}`}>{contactEmail}</a></div>
                         <div className="aside-inner"><span className="aside-inner__title">Phone numbers</span>
                             <a className="aside-inner__link" href={`tel:${phoneNumber}`}>{phoneNumber}</a>
-                            <a className="aside-inner__link" href={`tel:${phoneNumber}`}>{phoneNumber}</a>
                         </div>
                         <ul className="aside-socials">
                             <li className="aside-socials__item"><a className="aside-socials__link" href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <li className="aside-socials__item"><a className="aside-socials__link" href="#"><i className="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                            <li className="aside-socials__item"><a className="aside-socials__link aside-socials__link--active" href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
                             <li className="aside-socials__item"><a className="aside-socials__link" href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
                         </ul>
 

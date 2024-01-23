@@ -1,8 +1,10 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
-import { NavOptions } from "../../data/navbarOptions";
+import { MobileNavOptions } from "../../data/navbarOptions";
 import { contactEmail, phoneNumber } from "../../constants";
 import { useModal } from "../../hooks/useModal";
+import { useState } from "react";
+import { DonationModal } from "../DonationModal";
 
 
 type MobileNavBarHomeType = {
@@ -11,7 +13,21 @@ type MobileNavBarHomeType = {
 }
 
 export const MobileNavBarHome = ({ asideMenuOpen, handleAsideMenu }: MobileNavBarHomeType) => {
-    const { openModal } = useModal();
+    const { openModal, activeModal, closeModal } = useModal();
+
+    const [aboutPagesOpen, setAboutPagesOpen] = useState(false);
+    const [shopPagesOpen, setShopPagesOpen] = useState(false);
+
+    const handleAboutPages = () => {
+        setAboutPagesOpen(!aboutPagesOpen);
+
+    }
+
+    const handleShopPages = () => {
+        setShopPagesOpen(!shopPagesOpen);
+
+    }
+
 
     return (
         <>
@@ -29,22 +45,28 @@ export const MobileNavBarHome = ({ asideMenuOpen, handleAsideMenu }: MobileNavBa
                             <use xlinkHref="#close"></use>
                         </svg>
                     </button>
+
+
+
                     <div className="aside-dropdown__item d-lg-none d-block">
                         {
-                            NavOptions().map((option, index) => (
-                                <li key={index} className='main-menu__item'>
+                            MobileNavOptions().map((option, index) => (
+
+                                <li key={index} className="aside-menu__item" >
+
                                     <Link
-                                        to={option.href}
-                                        className={`main-menu__item main-menu__link ${(option.hasChildren) ? "main-menu__item--has-child" : ""}`}
+                                        to={option.href!}
+                                        className={`aside-menu__item aside-menu__link ${(option.hasChildren) ? "aside-menu__item--has-child" : ""}`}
                                         style={{ margin: 0 }}
+                                        onClick={(option.hasChildren && option.name === "Acerca De") ? () => {
+                                            handleAboutPages();
+                                        } : (option.hasChildren && option.name === "Shop Solidario") ? () => { handleShopPages() } : () => { }}
                                     >
-                                        <span>
-                                            {option.name}
-                                        </span>
+                                        <span className="aside-menu__link">{option.name}</span>
                                         {
-                                            (option.hasChildren && option.name == "Acerca De")
+                                            (option.hasChildren && option.name === "Acerca De")
                                             &&
-                                            <ul className="main-menu__sub-list sub-list--style-2" style={{ display: "block" }}>
+                                            <ul className="aside-menu__sub-list" style={{ display: aboutPagesOpen ? "block" : "none" }}>
                                                 <li><Link to="/sobre-nosotros"><span>Sobre Nosotros</span></Link></li>
                                                 <li><Link to="/donantes-y-colaboradores"><span>Donantes y Colaboradores</span></Link></li>
                                                 <li><Link to="/voluntarios"><span>Volvete Voluntario</span></Link></li>
@@ -53,36 +75,20 @@ export const MobileNavBarHome = ({ asideMenuOpen, handleAsideMenu }: MobileNavBa
                                                 <li><Link to="/blog"><span>Blog</span></Link></li>
                                                 <li><Link to="/galeria"><span>Galería</span></Link></li>
                                                 <li><Link to="/preguntas-frecuentes"><span>Preguntas Frecuentes</span></Link></li>
-                                            </ul>}
+                                            </ul>
+                                        }
                                         {
                                             (option.hasChildren && option.name === "Shop Solidario") &&
-                                            <ul className="main-menu__sub-list">
+                                            <ul className="aside-menu__sub-list" style={{ display: shopPagesOpen ? "block" : "none" }}>
                                                 <li><Link to="/shop-solidario"><span>Catálogo</span></Link></li>
                                                 <li><Link to="/shop-solidario/carrito"><span>Carrito</span></Link></li>
                                             </ul>
                                         }
                                     </Link>
                                 </li>
-                            ))
 
-                        }
+                            ))}
 
-
-
-
-                        <li className="aside-menu__item aside-menu__item--has-child">
-                            <a className="aside-menu__link" href="javascript:void(0);"><span>Pages</span></a>
-                            <ul className="aside-menu__sub-list" style={{ display: "block" }}>
-                                <li><Link to="/sobre-nosotros"><span>Sobre Nosotros</span></Link></li>
-                                <li><Link to="/donantes-y-colaboradores"><span>Donantes y Colaboradores</span></Link></li>
-                                <li><Link to="/voluntarios"><span>Volvete Voluntario</span></Link></li>
-                                <li><Link to="/eventos"><span>Eventos</span></Link></li>
-                                <li><Link to="/historias-de-vida"><span>Historias</span></Link></li>
-                                <li><Link to="/blog"><span>Blog</span></Link></li>
-                                <li><Link to="/galeria"><span>Galería</span></Link></li>
-                                <li><Link to="/preguntas-frecuentes"><span>Preguntas Frecuentes</span></Link></li>
-                            </ul>
-                        </li>
                     </div>
 
                     <div className="aside-dropdown__item">
@@ -105,12 +111,13 @@ export const MobileNavBarHome = ({ asideMenuOpen, handleAsideMenu }: MobileNavBa
                             <li className="aside-socials__item"><a className="aside-socials__link" href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
                         </ul>
 
+                        <div className="aside-dropdown__item d-flex" style={{ height: 50, fontWeight: "bold" }}>
+                            <a className="button--squared" onClick={openModal}><span>DONAR</span></a>
+                        </div>
                     </div>
 
-                    <div className="aside-dropdown__item">
-                        <a className="button button--squared" onClick={openModal}><span>Donar</span></a>
-                    </div>
                 </div>
+                <DonationModal showModal={activeModal} onHideModal={closeModal} />
             </div>
 
 

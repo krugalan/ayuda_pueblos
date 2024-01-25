@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom"
 import { CausesList } from "./CausesList"
+import { causes_img } from "../../assets/img"
 
 
 export const HelpSection = () => {
     return (
         <div>
             <section className="section causes">
-                {/* <img className="causes__bg" src={causes_img} alt="img" /> */}
+                <img className="causes__bg" src={causes_img} alt="img" />
                 <div className="container">
                     <div className="row align-items-end">
                         <div className="col-xl-5">
@@ -36,6 +37,8 @@ export const HelpSection = () => {
                             </div>
                         </div>
                     </div>
+
+
                     <div className="row align-items-end margin-bottom">
                         <div className="col-sm-6"><Link className="button button--primary" to="/nuestras-causas">Nuestras Causas</Link></div>
                         <div className="col-sm-6 d-flex justify-content-sm-end">

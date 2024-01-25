@@ -6,7 +6,7 @@ import { HelpSection } from '../components/HomePage/HelpSection'
 import { TestimonialsSection } from '../components/HomePage/TestimonialsSection'
 import { BlogHelpSection } from '../components/HomePage/BlogHelpSection'
 import { DonorsSection } from '../components/HomePage/DonorsSection'
-import { SocialsSection } from '../components/HomePage/SocialsSection'
+// import { SocialsSection } from '../components/HomePage/SocialsSection'
 
 export const HomePage = () => {
 
@@ -22,7 +22,7 @@ export const HomePage = () => {
                 <TestimonialsSection />
                 <BlogHelpSection />
                 <DonorsSection />
-                <SocialsSection />
+                {/* <SocialsSection /> */}
 
             </div>
         </div>

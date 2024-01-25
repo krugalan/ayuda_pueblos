@@ -49,7 +49,7 @@ export const TestimonialsSection = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-4">
-                            <div className="heading heading--primary"><span className="heading__pre-title">Testimonials</span>
+                            <div className="heading heading--primary"><span className="heading__pre-title">Testimonios</span>
                                 <h2 className="heading__title"><span>¿Qué Dicen</span><br /><span>De Nosotros?</span></h2>
                             </div>
                         </div>

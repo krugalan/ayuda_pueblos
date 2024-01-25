@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { useModal } from '../../hooks/useModal';
 import { DonationModal } from '../DonationModal';
 import { NavOptions } from '../../data/navbarOptions';
-import { useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MobileNavBarHome } from './MobileNavBarHome';
 import { contactEmail, phoneNumber } from '../../constants';
@@ -19,14 +18,11 @@ type NavBarType = {
 export const NavBar = ({ whiteNavBar, setWhiteNavBar }: NavBarType) => {
 
     const { openModal, activeModal, closeModal } = useModal();
-    // const {} = useSelector((state:RootState)=>state.navbar);
-    // const [asideMenuOpen, setAsideMenuOpen] = useState(false);
 
     const asideMenuOpen = useSelector(navbarSelector);
     const dispatch = useDispatch();
 
     const handleAsideMenu = () => {
-
         dispatch(asideMenuOpen ? closeNavbar() : openNavbar());
     }
 
@@ -55,39 +51,38 @@ export const NavBar = ({ whiteNavBar, setWhiteNavBar }: NavBarType) => {
                                     aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
                                     <GiHamburgerMenu size={30} />
                                 </button>
+                            </div>
 
-                                <div className={`aside-dropdown ${asideMenuOpen ? "aside-dropdown--active" : ""}`}>
-                                    <div className="aside-dropdown__inner">
-                                        <button className="aside-dropdown__close" onClick={handleAsideMenu} style={{ border: "none" }}>
-                                            <svg className="icon">
-                                                <use xlinkHref="#close"></use>
-                                            </svg>
-                                        </button>
 
-                                        <div className="aside-dropdown__item">
-                                            <ul className="aside-menu">
-                                                <li className="aside-menu__item"><a className="aside-menu__link" href="#">Documentos</a></li>
-                                                <li className="aside-menu__item"><a className="aside-menu__link" href="#">Información</a></li>
-                                                <li className="aside-menu__item"><a className="aside-menu__link" href="#">Additional Pages</a></li>
-                                                <li className="aside-menu__item"><a className="aside-menu__link" href="#">Elementos</a></li>
-                                                <li className="aside-menu__item"><a className="aside-menu__link" href="#">Contacto</a></li>
-                                            </ul>
-                                            <div className="aside-inner"><span className="aside-inner__title">Email</span><a className="aside-inner__link" href={`mailto:${contactEmail}`}>{contactEmail}</a></div>
-                                            <div className="aside-inner"><span className="aside-inner__title">Números de Contacto</span>
-                                                <a className="aside-inner__link" href={`tel:${phoneNumber}`}>{phoneNumber}</a>
-                                            </div>
-                                            <ul className="aside-socials">
-                                                <li className="aside-socials__item"><a className="aside-socials__link" href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                                <li className="aside-socials__item"><a className="aside-socials__link" href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                            </ul>
-                                            <div className="aside-dropdown__item d-flex" >
-                                                <a className="button button--squared" onClick={openModal}><span>Donar</span></a>
-                                            </div>
+                            <a onClick={handleAsideMenu} className={`aside-dropdown ${asideMenuOpen ? "aside-dropdown--active" : ""}`}>
+                                <div className="aside-dropdown__inner">
+                                    <button className="aside-dropdown__close" onClick={handleAsideMenu} style={{ border: "none" }}>
+                                        <svg className="icon">
+                                            <use xlinkHref="#close"></use>
+                                        </svg>
+                                    </button>
+
+                                    <div className="aside-dropdown__item">
+                                        <ul className="aside-menu">
+                                            <li className="aside-menu__item"><a className="aside-menu__link" href="#">Documentos</a></li>
+                                            <li className="aside-menu__item"><a className="aside-menu__link" href="#">Información</a></li>
+                                            <li className="aside-menu__item"><a className="aside-menu__link" href="#">Páginas Adicionales</a></li>
+                                            <li className="aside-menu__item"><a className="aside-menu__link" href="#">Elementos</a></li>
+                                        </ul>
+                                        <div className="aside-inner"><span className="aside-inner__title">Email</span><a className="aside-inner__link" href={`mailto:${contactEmail}`}>{contactEmail}</a></div>
+                                        <div className="aside-inner"><span className="aside-inner__title">Número de Contacto</span>
+                                            <a className="aside-inner__link" href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+                                        </div>
+                                        <ul className="aside-socials">
+                                            <li className="aside-socials__item"><a className="aside-socials__link" href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            <li className="aside-socials__item"><a className="aside-socials__link" href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                        <div className="aside-dropdown__item d-flex" >
+                                            <a className="button button--squared" onClick={openModal}><span>Donar</span></a>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            </a>
                             <div className="header-logo">
                                 <Link className="header-logo__link" to="/">
                                     {
@@ -119,7 +114,7 @@ export const NavBar = ({ whiteNavBar, setWhiteNavBar }: NavBarType) => {
                                                     {
                                                         (option.hasChildren && option.name == "Acerca De")
                                                         &&
-                                                        <ul className="main-menu__sub-list sub-list--style-2">
+                                                        <ul className="main-menu__sub-list sub-list--style-2" style={{ opacity: 1 }}>
                                                             <li><Link to="/sobre-nosotros"><span>Sobre Nosotros</span></Link></li>
                                                             <li><Link to="/donantes-y-colaboradores"><span>Donantes y Colaboradores</span></Link></li>
                                                             <li><Link to="/voluntarios"><span>Volvete Voluntario</span></Link></li>

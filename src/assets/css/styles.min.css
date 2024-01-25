@@ -17574,6 +17574,15 @@ section.section {
     height: 100%
 }
 
+.jarallax__background-image {
+    background-image: url(../img/testimonials_2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 20em;
+
+}
+
 .socials {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -26530,6 +26539,11 @@ section.shop {
 .testimonials--style-2 {
     position: relative;
     color: #fff
+}
+
+.testimonials--style-2__span {
+    font-size: 25px;
+    flex-wrap: wrap;
 }
 
 .testimonials--style-2__bg {

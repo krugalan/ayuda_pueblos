@@ -10,10 +10,10 @@ const initialState: AsideMenuType = {
 
 export const navbarReducer = createReducer(initialState, (builder) => {
     builder
-        .addCase(openNavbar, (state, action) => {
+        .addCase(openNavbar, (state) => {
             state.asideMenuOpen = true;
         })
-        .addCase(closeNavbar, (state, action) => {
+        .addCase(closeNavbar, (state) => {
             state.asideMenuOpen = false;
         })
 })

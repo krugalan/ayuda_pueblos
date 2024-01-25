@@ -12,7 +12,7 @@ export const AboutPage = () => {
         <section className="promo-primary">
             <MainPicture imgURL={about} title="Sobre" title2='Nosotros' />
         </section>
-        <AboutSection inverted />
+        <AboutSection />
         <MissionSection />
         <VideoSection />
         <StatisticsSection />

@@ -5,8 +5,7 @@ import { contactEmail, phoneNumber } from "../../constants";
 import { useModal } from "../../hooks/useModal";
 import { useState } from "react";
 import { DonationModal } from "../DonationModal";
-import { useDispatch, useSelector } from "react-redux";
-import { navbarSelector } from "../../modules/navbar/selectors";
+import { useDispatch } from "react-redux";
 import { closeNavbar } from "../../modules/navbar/actions";
 
 
@@ -109,12 +108,12 @@ export const MobileNavBarHome = ({ asideMenuOpen, handleAsideMenu }: MobileNavBa
                         <ul className="aside-menu">
                             <li className="aside-menu__item"><a className="aside-menu__link" href="#">Documentos</a></li>
                             <li className="aside-menu__item"><a className="aside-menu__link" href="#">Información</a></li>
-                            <li className="aside-menu__item"><a className="aside-menu__link" href="#">Additional Pages</a></li>
-                            <li className="aside-menu__item"><a className="aside-menu__link" href="#">Elements</a></li>
-                            <li className="aside-menu__item"><a className="aside-menu__link" href="#">Contacto</a></li>
+                            <li className="aside-menu__item"><a className="aside-menu__link" href="#">Páginas Adicionales</a></li>
+                            <li className="aside-menu__item"><a className="aside-menu__link" href="#">Elementos</a></li>
+                            {/* <li className="aside-menu__item"><Link className="aside-menu__link" to="/contacto">Contacto</Link></li> */}
                         </ul>
                         <div className="aside-inner"><span className="aside-inner__title">Email</span><a className="aside-inner__link" href={`mailto:${contactEmail}`}>{contactEmail}</a></div>
-                        <div className="aside-inner"><span className="aside-inner__title">Phone numbers</span>
+                        <div className="aside-inner"><span className="aside-inner__title">Número de Contacto</span>
                             <a className="aside-inner__link" href={`tel:${phoneNumber}`}>{phoneNumber}</a>
                         </div>
                         <ul className="aside-socials">

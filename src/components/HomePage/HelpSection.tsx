@@ -39,14 +39,14 @@ export const HelpSection = () => {
                     <div className="row align-items-end margin-bottom">
                         <div className="col-sm-6"><Link className="button button--primary" to="/nuestras-causas">Nuestras Causas</Link></div>
                         <div className="col-sm-6 d-flex justify-content-sm-end">
-                            <div className="slider__nav causes-slider__nav">
+                            {/* <div className="slider__nav causes-slider__nav">
                                 <div className="slider__arrows">
                                     <div className="slider__prev"><i className="fa fa-chevron-left" aria-hidden="true"></i>
                                     </div>
                                     <div className="slider__next"><i className="fa fa-chevron-right" aria-hidden="true"></i>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

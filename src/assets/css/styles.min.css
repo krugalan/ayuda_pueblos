@@ -6604,9 +6604,11 @@ a.close.disabled {
     height: 100%;
     overflow: hidden;
     outline: 0
+
 }
 
 .modal-dialog {
+
     position: relative;
     width: auto;
     margin: .5rem;
@@ -6711,6 +6713,7 @@ a.close.disabled {
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: .3rem;
     outline: 0
+
 }
 
 .modal-backdrop {
@@ -6763,6 +6766,7 @@ a.close.disabled {
     -webkit-box-flex: 1;
     flex: 1 1 auto;
     padding: 1rem
+    
 }
 
 .modal-footer {
@@ -11498,6 +11502,10 @@ a.text-secondary:hover {
 
 .text-success {
     color: #28a745 !important
+}
+.text-center{
+    text-align: center;
+    flex: 1;
 }
 
 a.text-success:focus,

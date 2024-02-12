@@ -1,4 +1,4 @@
-import error404 from './404.jpg'
+import error404 from './error404.jpg'
 import about_2 from './about_2.png'
 import about_layout_reverse from './about_layout_reverse.png'
 import about_layout from './about_layout.png'
